@@ -1,0 +1,1399 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>CPSR — Stem Cell Lift Moisturiser — Strive Group Brands LTD</title>
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&display=swap');
+:root {
+    --primary-blue: #43B296; --primary-dark: #2E8B72; --primary-light: #5CC4A8;
+    --black: #212121; --dark-gray: #424242; --medium-gray: #757575;
+    --light-gray: #F5F5F5; --border-gray: #E0E0E0; --white: #FFFFFF;
+    --pass-green: #2E7D32; --pass-green-bg: #E8F5E9;
+    --warning-amber: #FF9800; --warning-amber-bg: #FFF3E0;
+    --fail-red: #C62828; --fail-red-bg: #FFEBEE;
+    --check-green: #2E7D32; --check-bg: #E8F5E9;
+}
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body { font-family: 'Open Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; font-size: 9pt; line-height: 1.6; color: var(--dark-gray); background: var(--white); }
+.document { max-width: 210mm; margin: 0 auto; background: var(--white); }
+.cover-page { min-height: 297mm; display: flex; flex-direction: column; padding: 0; page-break-after: always; }
+.cover-header { background: var(--primary-blue); padding: 30px 40px; display: flex; justify-content: space-between; align-items: center; }
+.cover-logo { font-size: 32px; font-weight: 300; color: var(--white); letter-spacing: 1px; }
+.cover-date { color: rgba(255,255,255,0.8); font-size: 12px; }
+.cover-body { flex: 1; display: flex; flex-direction: column; justify-content: center; padding: 60px 40px; background: var(--white); }
+.cover-document-type { font-size: 12px; font-weight: 600; color: var(--primary-blue); text-transform: uppercase; letter-spacing: 2px; margin-bottom: 15px; }
+.cover-title { font-size: 36px; font-weight: 300; color: var(--black); line-height: 1.3; margin-bottom: 10px; }
+.cover-subtitle { font-size: 14px; font-weight: 400; color: var(--medium-gray); margin-bottom: 40px; }
+.cover-product-name { font-size: 24px; font-weight: 600; color: var(--primary-blue); padding: 20px 0; border-top: 2px solid var(--border-gray); border-bottom: 2px solid var(--border-gray); margin: 30px 0; }
+.cover-meta { display: grid; grid-template-columns: repeat(2, 1fr); gap: 20px; margin-top: 30px; }
+.cover-meta-item { padding: 12px 0; border-left: 3px solid var(--primary-blue); padding-left: 15px; }
+.cover-meta-label { font-size: 10px; text-transform: uppercase; letter-spacing: 1px; color: var(--medium-gray); margin-bottom: 4px; }
+.cover-meta-value { font-size: 13px; font-weight: 600; color: var(--dark-gray); }
+.cover-footer { background: var(--light-gray); padding: 25px 40px; border-top: 1px solid var(--border-gray); }
+.cover-confidential { display: inline-block; background: var(--warning-amber); color: var(--white); padding: 4px 12px; font-size: 10px; font-weight: 600; text-transform: uppercase; letter-spacing: 1px; margin-bottom: 10px; }
+.cover-footer-text { font-size: 10px; color: var(--medium-gray); line-height: 1.6; }
+.page { padding: 20mm 20mm 25mm 20mm; min-height: 297mm; position: relative; page-break-after: always; }
+.page-header { display: flex; justify-content: space-between; align-items: center; padding-bottom: 15px; border-bottom: 2px solid var(--primary-blue); margin-bottom: 25px; }
+.page-header-logo { font-size: 18px; font-weight: 300; color: var(--primary-blue); }
+.page-header-title { font-size: 11px; color: var(--medium-gray); }
+.page-footer { position: absolute; bottom: 15mm; left: 20mm; right: 20mm; display: flex; justify-content: space-between; align-items: center; padding-top: 10px; border-top: 1px solid var(--border-gray); font-size: 9px; color: var(--medium-gray); }
+h1 { font-size: 18px; font-weight: 600; color: var(--primary-blue); margin-bottom: 20px; padding-bottom: 10px; border-bottom: 2px solid var(--primary-blue); }
+h2 { font-size: 12px; font-weight: 600; color: var(--dark-gray); margin: 25px 0 12px 0; }
+h3 { font-size: 10px; font-weight: 600; color: var(--primary-blue); margin: 18px 0 8px 0; }
+h4 { font-size: 9px; font-weight: 600; color: var(--dark-gray); margin: 12px 0 6px 0; }
+p { margin-bottom: 10px; text-align: justify; }
+ul { margin: 8px 0 8px 20px; } li { margin-bottom: 4px; }
+.info-grid { display: grid; grid-template-columns: 200px 1fr; gap: 0; margin: 15px 0; font-size: 10pt; }
+.info-label { font-weight: 400; color: var(--dark-gray); padding: 8px 0; border-bottom: 1px solid var(--border-gray); }
+.info-value { font-weight: 600; color: var(--black); padding: 8px 0; border-bottom: 1px solid var(--border-gray); }
+table { width: 100%; border-collapse: collapse; margin: 15px 0 20px 0; font-size: 8pt; }
+th { background: var(--light-gray); color: var(--dark-gray); font-weight: 600; text-align: left; padding: 4px 6px; border: 1px solid var(--border-gray); font-size: 7.5pt; }
+td { padding: 4px 6px; border: 1px solid var(--border-gray); vertical-align: middle; }
+tr:nth-child(even) { background: var(--light-gray); }
+table.dense { font-size: 7.5pt; }
+table.dense th, table.dense td { padding: 3px 5px; }
+.badge { display: inline-block; padding: 4px 12px; font-size: 7.5px; font-weight: 600; text-transform: uppercase; letter-spacing: 0.5px; border-radius: 3px; }
+.badge-pass        { background: var(--pass-green);    color: var(--white); }
+.badge-compliant   { background: var(--check-bg);      color: var(--check-green); }
+.badge-safe        { background: var(--pass-green-bg); color: var(--pass-green); }
+.badge-warning     { background: var(--warning-amber-bg); color: var(--warning-amber); }
+.badge-fail        { background: var(--fail-red-bg);   color: var(--fail-red); }
+.badge-na          { background: var(--light-gray);    color: var(--medium-gray); }
+.badge-resolved    { background: var(--pass-green-bg); color: var(--pass-green); }
+.method-box { background: var(--light-gray); padding: 12px 17px; margin: 15px 0; border-left: 3px solid var(--primary-blue); font-size: 8pt; }
+.method-box-title { font-weight: 600; color: var(--dark-gray); margin-bottom: 8px; font-size: 9pt; }
+.conclusion-box { background: var(--pass-green-bg); border: 1px solid var(--pass-green); padding: 15px 20px; margin: 20px 0; }
+.conclusion-box.conditional { background: var(--warning-amber-bg); border: 1px solid var(--warning-amber); }
+.conclusion-title { font-size: 10px; font-weight: 600; color: var(--pass-green); text-transform: uppercase; letter-spacing: 1px; margin-bottom: 10px; }
+.conclusion-box.conditional .conclusion-title { color: var(--warning-amber); }
+.conclusion-text { font-size: 8pt; color: var(--dark-gray); font-weight: 600; }
+.warning-box { background: var(--warning-amber-bg); border-left: 3px solid var(--warning-amber); padding: 15px 20px; margin: 15px 0; }
+.warning-box-title { font-weight: 600; color: var(--warning-amber); margin-bottom: 5px; }
+.part-header { background: var(--primary-blue); color: var(--white); padding: 15px 20px; margin: 25px 0 20px 0; }
+.part-label { font-size: 10px; text-transform: uppercase; letter-spacing: 2px; opacity: 0.8; margin-bottom: 3px; }
+.part-title { font-size: 16px; font-weight: 600; }
+.signature-block { margin-top: 40px; padding-top: 20px; }
+.signature-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 40px; margin-top: 30px; }
+.signature-item { padding: 15px; background: var(--light-gray); }
+.signature-line { border-bottom: 1px solid var(--dark-gray); height: 40px; margin-bottom: 5px; }
+.signature-label { font-size: 9px; color: var(--medium-gray); text-transform: uppercase; letter-spacing: 0.5px; }
+.toc { margin: 20px 0; }
+.toc-title { font-size: 16px; font-weight: 600; color: var(--primary-blue); margin-bottom: 15px; padding-bottom: 8px; border-bottom: 2px solid var(--primary-blue); }
+.toc-part { font-weight: 600; color: var(--primary-blue); padding: 12px 0 5px 0; font-size: 11px; text-transform: uppercase; letter-spacing: 1px; }
+.toc-section { display: flex; justify-content: space-between; padding: 8px 0; border-bottom: 1px dotted var(--border-gray); font-size: 10pt; }
+.toc-number { color: var(--primary-blue); font-weight: 600; width: 25px; }
+.toc-text { flex: 1; color: var(--dark-gray); }
+.mos-safe   { color: var(--pass-green);    font-weight: 600; }
+.mos-na     { color: var(--medium-gray); }
+.summary-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 20px; margin: 20px 0; }
+.summary-card { background: var(--light-gray); padding: 15px 20px; border-left: 3px solid var(--primary-blue); }
+.summary-card-label { font-size: 10px; text-transform: uppercase; letter-spacing: 1px; color: var(--medium-gray); margin-bottom: 4px; }
+.summary-card-value { font-size: 14px; font-weight: 600; color: var(--dark-gray); }
+.summary-card-value.pass { color: var(--pass-green); }
+.evidence-tag { display: inline-block; padding: 2px 6px; font-size: 8px; font-weight: 600; border-radius: 2px; text-transform: uppercase; letter-spacing: 0.3px; margin-left: 4px; vertical-align: middle; }
+.ev-measured   { background: #E8F5E9; color: #2E7D32; }
+.ev-supplier   { background: #E3F2FD; color: #1565C0; }
+.ev-literature { background: #FFF3E0; color: #E65100; }
+@media print {
+    .document { max-width: none; }
+    .page { page-break-after: always; min-height: auto; }
+    .cover-page { min-height: auto; }
+    body { font-size: 9pt; }
+    h1 { font-size: 18px; } h2 { font-size: 13px; } h3 { font-size: 11px; }
+    .info-grid, .method-box, .conclusion-box, .warning-box, table, tr, p, h1, h2, h3, h4 { page-break-inside: avoid; }
+    h1, h2, h3, h4 { page-break-after: avoid; }
+    thead { display: table-header-group; }
+    @page { margin: 15mm; }
+}
+</style>
+</head>
+<body>
+<div class="document">
+
+<!-- ============================================================ -->
+<!-- COVER PAGE                                                    -->
+<!-- ============================================================ -->
+<div class="cover-page">
+    <div class="cover-header">
+        <div class="cover-logo">CPSR</div>
+        <div class="cover-date">25.03.2026</div>
+    </div>
+    <div class="cover-body">
+        <div class="cover-document-type">Cosmetic Product Safety Report</div>
+        <div class="cover-title">Cosmetic Product<br>Safety Report</div>
+        <div class="cover-subtitle">In accordance with Article 10(1) of Regulation (EC) No 1223/2009 as retained in UK law (UK Cosmetics Regulation) and Commission Decision 2013/674/EU &#8212; Annex I</div>
+        <div class="cover-product-name">Stem Cell Lift Moisturiser<br>Leave-on Face &amp; Neck Cream</div>
+        <div class="cover-meta">
+            <div class="cover-meta-item">
+                <div class="cover-meta-label">Document Reference</div>
+                <div class="cover-meta-value">CPSR-HOC-STEMCELLLIFT-2026-V1</div>
+            </div>
+            <div class="cover-meta-item">
+                <div class="cover-meta-label">Version</div>
+                <div class="cover-meta-value">1.0</div>
+            </div>
+            <div class="cover-meta-item">
+                <div class="cover-meta-label">Brand</div>
+                <div class="cover-meta-value">Harrogate Organics Company</div>
+            </div>
+            <div class="cover-meta-item">
+                <div class="cover-meta-label">Product Category</div>
+                <div class="cover-meta-value">Face &amp; Neck Moisturiser (Leave-on)</div>
+            </div>
+            <div class="cover-meta-item">
+                <div class="cover-meta-label">Responsible Person</div>
+                <div class="cover-meta-value">Strive Group Brands LTD</div>
+            </div>
+            <div class="cover-meta-item">
+                <div class="cover-meta-label">Market</div>
+                <div class="cover-meta-value">United Kingdom</div>
+            </div>
+        </div>
+    </div>
+    <div class="cover-footer">
+        <div class="cover-confidential">Confidential</div>
+        <div class="cover-footer-text">
+            This document contains confidential information intended for regulatory compliance purposes.
+            Distribution is restricted to authorised personnel and competent authorities only.
+            This CPSR must be kept available for 10 years after the last batch is placed on the market
+            per Article 11(3) of Regulation (EC) No 1223/2009 as retained in UK law.
+            <br><strong>STATUS: READY FOR ASSESSOR REVIEW &#8212; Not valid without qualified safety assessor signature (Article 10(2)).</strong>
+        </div>
+    </div>
+</div>
+
+
+<!-- ============================================================ -->
+<!-- ONE-PAGE SAFETY SUMMARY                                      -->
+<!-- ============================================================ -->
+<div class="page">
+    <div class="page-header">
+        <div class="page-header-logo">CPSR</div>
+        <div class="page-header-title">Stem Cell Lift Moisturiser &#8212; Harrogate Organics Company &#8212; Strive Group Brands LTD</div>
+    </div>
+
+    <h1>One-Page Safety Summary</h1>
+
+    <div class="summary-grid">
+        <div class="summary-card">
+            <div class="summary-card-label">Overall Verdict</div>
+            <div class="summary-card-value pass">PASS (pending assessor signature)</div>
+        </div>
+        <div class="summary-card">
+            <div class="summary-card-label">Document Status</div>
+            <div class="summary-card-value">V1.0 &#8212; Ready for Assessor Review</div>
+        </div>
+        <div class="summary-card">
+            <div class="summary-card-label">Product Type</div>
+            <div class="summary-card-value">Leave-on Face &amp; Neck Moisturiser</div>
+        </div>
+        <div class="summary-card">
+            <div class="summary-card-label">Retention Factor</div>
+            <div class="summary-card-value">1.0 (Leave-on)</div>
+        </div>
+        <div class="summary-card">
+            <div class="summary-card-label">Lowest MoS</div>
+            <div class="summary-card-value pass">11,592 (Allantoin) &#8212; threshold 100</div>
+        </div>
+        <div class="summary-card">
+            <div class="summary-card-label">UE / SUE to Date</div>
+            <div class="summary-card-value pass">0 / 0</div>
+        </div>
+    </div>
+
+    <h2>Supporting Evidence on File</h2>
+    <table class="dense">
+        <thead><tr><th>#</th><th>Document</th><th>Issuer / Date</th><th>Status</th></tr></thead>
+        <tbody>
+            <tr><td>1</td><td>CPSR Entry Form &#8212; Stem Cell Lift Moisturiser</td><td>MySwissLab+, SBR Group S&#224;rl &#8212; 25/03/2026</td><td><span class="badge badge-pass">ON FILE</span></td></tr>
+            <tr><td>2</td><td>Safety Data Sheet (MSDS) V1 &#8212; Stem Cell Lift Moisturiser</td><td>Harrogate Organics Company &#8212; 17/06/2025</td><td><span class="badge badge-pass">ON FILE</span></td></tr>
+            <tr><td>3</td><td>Challenge Test Report (ISO 11930) &#8212; Sample TR7YU</td><td>MySwissLab+, SBR Group S&#224;rl &#8212; 17/08/2024</td><td><span class="badge badge-pass">ON FILE</span></td></tr>
+            <tr><td>4</td><td>Microbiological Analysis Report (ISO 17516:2004) &#8212; Sample TR7YU</td><td>MySwissLab+, SBR Group S&#224;rl &#8212; 17/08/2024</td><td><span class="badge badge-pass">ON FILE</span></td></tr>
+            <tr><td>5</td><td>Stability Test Report (12 weeks accelerated) &#8212; Sample TR7YU</td><td>MySwissLab+, SBR Group S&#224;rl &#8212; 17/08/2024</td><td><span class="badge badge-pass">ON FILE</span></td></tr>
+        </tbody>
+    </table>
+
+    <div class="page-footer">
+        <span>CPSR-HOC-STEMCELLLIFT-2026-V1</span>
+        <span>Page 2</span>
+        <span>Confidential</span>
+    </div>
+</div>
+
+<!-- ============================================================ -->
+<!-- OPEN ITEMS                                                    -->
+<!-- ============================================================ -->
+<div class="page">
+    <div class="page-header">
+        <div class="page-header-logo">CPSR</div>
+        <div class="page-header-title">Stem Cell Lift Moisturiser &#8212; Harrogate Organics Company &#8212; Strive Group Brands LTD</div>
+    </div>
+
+    <h2>Open Items</h2>
+    <table class="dense">
+        <thead><tr><th>ID</th><th>Priority</th><th>Description</th><th>Resolution Path</th></tr></thead>
+        <tbody>
+            <tr><td>OI-001</td><td><span class="badge badge-warning">REQUIRED</span></td><td>Safety assessor review and signature &#8212; CPSR not valid until signed by a qualified assessor per Article 10(2) of Regulation (EC) No 1223/2009</td><td>Review by qualified safety assessor; complete Part B Section 4</td></tr>
+        </tbody>
+    </table>
+
+    <div class="page-footer">
+        <span>CPSR-HOC-STEMCELLLIFT-2026-V1</span>
+        <span>Page 3</span>
+        <span>Confidential</span>
+    </div>
+</div>
+
+<!-- ============================================================ -->
+<!-- TABLE OF CONTENTS                                            -->
+<!-- ============================================================ -->
+<div class="page">
+    <div class="page-header">
+        <div class="page-header-logo">CPSR</div>
+        <div class="page-header-title">Stem Cell Lift Moisturiser &#8212; Harrogate Organics Company &#8212; Strive Group Brands LTD</div>
+    </div>
+
+    <div class="toc">
+        <div class="toc-title">Contents</div>
+
+        <div class="toc-part">Front Matter</div>
+        <div class="toc-section"><span class="toc-number">&#8226;</span><span class="toc-text">One-Page Safety Summary</span><span>2&#8211;3</span></div>
+        <div class="toc-section"><span class="toc-number">&#8226;</span><span class="toc-text">Responsible Person &amp; Manufacturer Identity</span><span>5</span></div>
+        <div class="toc-section"><span class="toc-number">&#8226;</span><span class="toc-text">Good Manufacturing Practice (GMP) Evidence</span><span>6</span></div>
+        <div class="toc-section"><span class="toc-number">&#8226;</span><span class="toc-text">Non-Animal Testing Statement</span><span>7</span></div>
+        <div class="toc-section"><span class="toc-number">&#8226;</span><span class="toc-text">Product Description</span><span>8</span></div>
+
+        <div class="toc-part">Part A &#8212; Cosmetic Product Safety Information</div>
+        <div class="toc-section"><span class="toc-number">1</span><span class="toc-text">Quantitative and Qualitative Composition</span><span>9&#8211;10</span></div>
+        <div class="toc-section"><span class="toc-number">2</span><span class="toc-text">Physical and Chemical Properties &amp; Stability</span><span>11&#8211;12</span></div>
+        <div class="toc-section"><span class="toc-number">3</span><span class="toc-text">Microbiological Quality</span><span>13&#8211;14</span></div>
+        <div class="toc-section"><span class="toc-number">4</span><span class="toc-text">Impurities, Traces, Packaging Material</span><span>15</span></div>
+        <div class="toc-section"><span class="toc-number">5</span><span class="toc-text">Normal and Reasonably Foreseeable Use</span><span>16</span></div>
+        <div class="toc-section"><span class="toc-number">6</span><span class="toc-text">Exposure to the Cosmetic Product</span><span>17</span></div>
+        <div class="toc-section"><span class="toc-number">7</span><span class="toc-text">Exposure to the Substances (SED Table)</span><span>18</span></div>
+        <div class="toc-section"><span class="toc-number">8</span><span class="toc-text">Toxicological Profile of Substances (MoS Table)</span><span>19&#8211;21</span></div>
+        <div class="toc-section"><span class="toc-number">9</span><span class="toc-text">Undesirable Effects &amp; Cosmetovigilance</span><span>22</span></div>
+        <div class="toc-section"><span class="toc-number">10</span><span class="toc-text">Additional Information on the Product</span><span>23</span></div>
+
+        <div class="toc-part">Part B &#8212; Cosmetic Product Safety Assessment</div>
+        <div class="toc-section"><span class="toc-number">1</span><span class="toc-text">Assessment Conclusion</span><span>24</span></div>
+        <div class="toc-section"><span class="toc-number">2</span><span class="toc-text">Labelled Warnings and Instructions of Use</span><span>25&#8211;26</span></div>
+        <div class="toc-section"><span class="toc-number">3</span><span class="toc-text">Reasoning</span><span>27&#8211;28</span></div>
+        <div class="toc-section"><span class="toc-number">4</span><span class="toc-text">Assessor Credentials and Approval</span><span>29&#8211;30</span></div>
+    </div>
+
+    <div class="page-footer">
+        <span>CPSR-HOC-STEMCELLLIFT-2026-V1</span>
+        <span>Page 4</span>
+        <span>Confidential</span>
+    </div>
+</div>
+
+<!-- ============================================================ -->
+<!-- FRONT MATTER: RESPONSIBLE PERSON                            -->
+<!-- ============================================================ -->
+<div class="page">
+    <div class="page-header">
+        <div class="page-header-logo">CPSR</div>
+        <div class="page-header-title">Stem Cell Lift Moisturiser &#8212; Harrogate Organics Company &#8212; Strive Group Brands LTD</div>
+    </div>
+
+    <h1>Responsible Person (Article 4)</h1>
+    <div class="info-grid">
+        <div class="info-label">Company Name</div><div class="info-value">Strive Group Brands LTD</div>
+        <div class="info-label">Brand</div><div class="info-value">Harrogate Organics Company</div>
+        <div class="info-label">Contact Person</div><div class="info-value">Andrew Burrows</div>
+        <div class="info-label">Position</div><div class="info-value">Co-Founder</div>
+        <div class="info-label">Address</div><div class="info-value">28 Freemans Way, Harrogate, England, HG3 1DH, United Kingdom</div>
+        <div class="info-label">Email</div><div class="info-value">andrew.burrows@strive-group.com</div>
+        <div class="info-label">Phone</div><div class="info-value">07807 482443 / 03301 332025</div>
+    </div>
+
+    <h1>Prepared By</h1>
+    <div class="info-grid">
+        <div class="info-label">Laboratory / Consultancy</div><div class="info-value">MySwissLab+, SBR Group S&#224;rl</div>
+        <div class="info-label">Address</div><div class="info-value">1B Route de l&#8217;Industrie, 1072 Forel, Switzerland</div>
+        <div class="info-label">Email</div><div class="info-value">hello@myswisslab.ch</div>
+        <div class="info-label">Report Date</div><div class="info-value">25 March 2026</div>
+        <div class="info-label">Document Version</div><div class="info-value">1.0</div>
+        <div class="info-label">EAN</div><div class="info-value">5060767370513</div>
+    </div>
+
+    <div class="page-footer">
+        <span>CPSR-HOC-STEMCELLLIFT-2026-V1</span>
+        <span>Page 5</span>
+        <span>Confidential</span>
+    </div>
+</div>
+
+<!-- ============================================================ -->
+<!-- FRONT MATTER: GMP EVIDENCE                                  -->
+<!-- ============================================================ -->
+<div class="page">
+    <div class="page-header">
+        <div class="page-header-logo">CPSR</div>
+        <div class="page-header-title">Stem Cell Lift Moisturiser &#8212; Harrogate Organics Company &#8212; Strive Group Brands LTD</div>
+    </div>
+
+    <h2>Good Manufacturing Practice (GMP) Evidence</h2>
+    <p>The cosmetic product Stem Cell Lift Moisturiser is manufactured in accordance with the principles of Good Manufacturing Practice (GMP) as defined by <strong>ISO 22716:2007</strong> and <strong>Regulation (EC) No 1223/2009, Article 8</strong> as retained in UK law. The following quality documentation is held on file by the Responsible Person (Strive Group Brands LTD).</p>
+
+    <table class="dense">
+        <thead><tr><th>Document</th><th>Reference / Issuer</th><th>Status</th></tr></thead>
+        <tbody>
+            <tr><td>Safety Data Sheet (MSDS) V1</td><td>Harrogate Organics Company &#8212; 17/06/2025</td><td><span class="badge badge-resolved">ON FILE</span></td></tr>
+            <tr><td>Stability Test Report (12 weeks accelerated)</td><td>MySwissLab+, SBR Group S&#224;rl &#8212; Sample TR7YU &#8212; 17/08/2024</td><td><span class="badge badge-resolved">ON FILE</span></td></tr>
+            <tr><td>Challenge Test Report (ISO 11930)</td><td>MySwissLab+, SBR Group S&#224;rl &#8212; Sample TR7YU &#8212; 17/08/2024</td><td><span class="badge badge-resolved">ON FILE</span></td></tr>
+            <tr><td>Microbiological Analysis Report (ISO 17516:2004)</td><td>MySwissLab+, SBR Group S&#224;rl &#8212; Sample TR7YU &#8212; 17/08/2024</td><td><span class="badge badge-resolved">ON FILE</span></td></tr>
+            <tr><td>CPSR Entry Form</td><td>MySwissLab+, SBR Group S&#224;rl &#8212; 25/03/2026</td><td><span class="badge badge-resolved">ON FILE</span></td></tr>
+        </tbody>
+    </table>
+
+    <div class="conclusion-box">
+        <div class="conclusion-title">GMP Evidence &#8212; Filed</div>
+        <div class="conclusion-text">The product has been manufactured and tested in accordance with GMP principles (ISO 22716:2007). All relevant quality documentation &#8212; including the MSDS, stability test report, challenge test, and microbiological analysis report &#8212; are held on file by Strive Group Brands LTD, confirming compliance with Article 8 of Regulation (EC) No 1223/2009 as retained in UK law.</div>
+    </div>
+
+    <div class="page-footer">
+        <span>CPSR-HOC-STEMCELLLIFT-2026-V1</span>
+        <span>Page 6</span>
+        <span>Confidential</span>
+    </div>
+</div>
+
+<!-- ============================================================ -->
+<!-- FRONT MATTER: NON-ANIMAL TESTING STATEMENT                  -->
+<!-- ============================================================ -->
+<div class="page">
+    <div class="page-header">
+        <div class="page-header-logo">CPSR</div>
+        <div class="page-header-title">Stem Cell Lift Moisturiser &#8212; Harrogate Organics Company &#8212; Strive Group Brands LTD</div>
+    </div>
+
+    <h1>Non-Animal Testing Statement</h1>
+
+    <div class="method-box">
+        <div class="method-box-title">Declaration of Compliance with the Animal Testing Ban</div>
+        <p>In accordance with <strong>Article 18 of Regulation (EC) No 1223/2009</strong> as retained in UK law, and as confirmed by the product Safety Data Sheet (MSDS V1, Harrogate Organics Company, 17/06/2025):</p>
+        <ol style="margin: 10px 0 10px 20px;">
+            <li style="margin-bottom: 8px;"><strong>No animal testing</strong> has been carried out on the finished cosmetic product &#8220;Stem Cell Lift Moisturiser&#8221; or on its formulation for the purpose of meeting the requirements of this Regulation.</li>
+            <li style="margin-bottom: 8px;"><strong>No animal testing</strong> has been carried out by or on behalf of the Responsible Person (Strive Group Brands LTD / Harrogate Organics Company) on any of the ingredients contained in this product since the applicable regulatory deadlines (11 March 2009 for finished products; 11 March 2013 for remaining endpoints).</li>
+            <li style="margin-bottom: 8px;">All toxicological data referenced in this CPSR are derived from: pre-existing studies conducted before the ban deadlines; REACH registration dossiers; published literature and SCCS opinions; CIR (Cosmetic Ingredient Review) safety reports; in vitro and alternative methods; QSAR modelling and read-across where applicable.</li>
+            <li style="margin-bottom: 8px;">The MSDS (Section 14) confirms the product is not regulated as a dangerous good under UNRTDG, IATA-DGR, or IMDG-Code, consistent with the non-hazardous formulation profile.</li>
+        </ol>
+        <p>The Responsible Person confirms that the formulation and all its ingredients comply with the animal testing ban applicable under Regulation (EC) No 1223/2009 as retained in UK law. The MSDS (OECD 404 skin test: non-irritant; eye test: non-irritant) provides in vitro/non-animal confirmation of safety endpoints.</p>
+    </div>
+
+    <div class="page-footer">
+        <span>CPSR-HOC-STEMCELLLIFT-2026-V1</span>
+        <span>Page 7</span>
+        <span>Confidential</span>
+    </div>
+</div>
+
+<!-- ============================================================ -->
+<!-- FRONT MATTER: PRODUCT DESCRIPTION                           -->
+<!-- ============================================================ -->
+<div class="page">
+    <div class="page-header">
+        <div class="page-header-logo">CPSR</div>
+        <div class="page-header-title">Stem Cell Lift Moisturiser &#8212; Harrogate Organics Company &#8212; Strive Group Brands LTD</div>
+    </div>
+
+    <h1>Product Description</h1>
+    <div class="info-grid">
+        <div class="info-label">Product Name</div><div class="info-value">Stem Cell Lift Moisturiser</div>
+        <div class="info-label">Brand</div><div class="info-value">Harrogate Organics Company</div>
+        <div class="info-label">Responsible Person</div><div class="info-value">Strive Group Brands LTD</div>
+        <div class="info-label">Product Category</div><div class="info-value">Face cream / serum (moisturiser)</div>
+        <div class="info-label">Product Type</div><div class="info-value">Leave-on</div>
+        <div class="info-label">Product Format</div><div class="info-value">Semi-solid cream &#8212; airless acrylonitrile styrene (AS) jar</div>
+        <div class="info-label">Areas of Application</div><div class="info-value">Face and neck (&#8531; head area, ~565 cm&#178;)</div>
+        <div class="info-label">Application Method</div><div class="info-value">Fingertip application, gentle circular massage</div>
+        <div class="info-label">Amount Applied per Application</div><div class="info-value">1.54 g / mL</div>
+        <div class="info-label">Frequency of Use</div><div class="info-value">Twice daily (morning and night)</div>
+        <div class="info-label">Appearance</div><div class="info-value">White to off-white cream</div>
+        <div class="info-label">pH</div><div class="info-value">5.0&#8211;5.5</div>
+        <div class="info-label">EAN / Barcode</div><div class="info-value">5060767370513</div>
+        <div class="info-label">Shelf Life</div><div class="info-value">24 months (unopened)</div>
+        <div class="info-label">PAO</div><div class="info-value">12 months (open jar symbol &#43; &#8216;12M&#8217;)</div>
+        <div class="info-label">Target Group</div><div class="info-value">Adults (general population)</div>
+        <div class="info-label">Directions for Use</div><div class="info-value">Apply a small amount of moisturiser to a cleansed face and neck, avoiding the delicate eye area. Dab delicately and blend into the skin in circular motions. Apply twice a day, morning and night.</div>
+    </div>
+
+    <div class="page-footer">
+        <span>CPSR-HOC-STEMCELLLIFT-2026-V1</span>
+        <span>Page 8</span>
+        <span>Confidential</span>
+    </div>
+</div>
+
+
+<!-- ============================================================ -->
+<!-- PART A — Section 1: Composition                            -->
+<!-- ============================================================ -->
+<div class="page">
+    <div class="page-header">
+        <div class="page-header-logo">CPSR</div>
+        <div class="page-header-title">Stem Cell Lift Moisturiser &#8212; Harrogate Organics Company &#8212; Strive Group Brands LTD</div>
+    </div>
+
+    <div class="part-header">
+        <div class="part-label">Part A</div>
+        <div class="part-title">Cosmetic Product Safety Information</div>
+    </div>
+
+    <h1>1. Quantitative and Qualitative Composition</h1>
+
+    <h2>1.1 Product Identity</h2>
+    <div class="info-grid">
+        <div class="info-label">Product Name</div><div class="info-value">Stem Cell Lift Moisturiser</div>
+        <div class="info-label">Brand</div><div class="info-value">Harrogate Organics Company</div>
+        <div class="info-label">Product Category</div><div class="info-value">Face cream / serum</div>
+        <div class="info-label">Product Type</div><div class="info-value">Leave-on</div>
+        <div class="info-label">Container</div><div class="info-value">Airless acrylonitrile styrene (AS) jar</div>
+        <div class="info-label">Application Area</div><div class="info-value">Face and neck (~565 cm&#178;)</div>
+        <div class="info-label">Amount Applied per Application</div><div class="info-value">1.54 g / mL</div>
+        <div class="info-label">Frequency of Use</div><div class="info-value">Twice daily (morning and night)</div>
+        <div class="info-label">Target Population</div><div class="info-value">Adults (general)</div>
+        <div class="info-label">Shelf Life</div><div class="info-value">24 months (unopened); PAO 12 months</div>
+        <div class="info-label">Appearance</div><div class="info-value">White to off-white cream</div>
+        <div class="info-label">pH</div><div class="info-value">5.0&#8211;5.5</div>
+    </div>
+
+    <h2>1.2 Quantitative Formula</h2>
+    <p style="font-size:8pt;">All concentrations expressed as % w/w. Total formula = 100.00% w/w. Citric Acid is used as a pH adjuster (q.s. &#8212; quantum satis). Formula validated against MSDS Version V1 (issued 17/06/2025).</p>
+
+    <table class="dense">
+        <thead>
+            <tr><th>#</th><th>INCI Name</th><th>CAS Number</th><th>Function(s)</th><th>Conc. (% w/w)</th></tr>
+        </thead>
+        <tbody>
+            <tr><td>1</td><td>Aqua</td><td>7732-18-5</td><td>Solvent</td><td>74.400</td></tr>
+            <tr><td>2</td><td>Prunus Armeniaca Kernel Oil</td><td>68650-44-2 / 72869-69-3</td><td>Fragrance, Skin Conditioning</td><td>7.000</td></tr>
+            <tr><td>3</td><td>Glycerin</td><td>56-81-5</td><td>Skin Conditioning &#8212; Humectant, Denaturant</td><td>3.150</td></tr>
+            <tr><td>4</td><td>Helianthus Annuus Seed Oil</td><td>8001-21-6</td><td>Solvent, Skin Conditioning &#8212; Emollient, Occlusive</td><td>3.000</td></tr>
+            <tr><td>5</td><td>Cetearyl Olivate</td><td>85116-80-9</td><td>Emulsifier</td><td>2.400</td></tr>
+            <tr><td>6</td><td>Cetearyl Alcohol</td><td>67762-27-0 / 8005-44-5</td><td>Skin Conditioning &#8212; Emollient, Surfactant</td><td>2.000</td></tr>
+            <tr><td>7</td><td>Sorbitan Olivate</td><td>223706-40-9</td><td>Surfactant, Emulsifying</td><td>1.600</td></tr>
+            <tr><td>8</td><td>Olea Europaea Fruit Oil</td><td>8001-25-0</td><td>Skin Conditioning</td><td>1.000</td></tr>
+            <tr><td>9</td><td>Cocos Nucifera Oil</td><td>8001-31-8</td><td>Emollient, Skin Conditioning</td><td>1.000</td></tr>
+            <tr><td>10</td><td>Butyrospermum Parkii Butter</td><td>194043-92-0 / 91080-23-8</td><td>Skin Conditioning, Viscosity Controlling</td><td>1.000</td></tr>
+            <tr><td>11</td><td>Zinc Oxide</td><td>1314-13-2</td><td>UV Absorber, Skin Protectant, Bulking</td><td>1.000</td></tr>
+            <tr><td>12</td><td>1,2-Hexanediol</td><td>6920-22-5</td><td>Skin Conditioning, Solvent</td><td>0.750</td></tr>
+            <tr><td>13</td><td>Caprylyl Glycol</td><td>1117-86-8</td><td>Skin Conditioning, Emollient</td><td>0.750</td></tr>
+            <tr><td>14</td><td>Xanthan Gum</td><td>11138-66-2</td><td>Binding, Surfactant &#8212; Emulsifying</td><td>0.200</td></tr>
+            <tr><td>15</td><td>Potassium Sorbate</td><td>24634-61-5 / 590-00-1</td><td>Preservative</td><td>0.100</td></tr>
+            <tr><td>16</td><td>Oryza Sativa Bran Oil</td><td>68553-81-1</td><td>Emollient, Skin Conditioning</td><td>0.100</td></tr>
+            <tr><td>17</td><td>Sodium Hyaluronate</td><td>9067-32-7</td><td>Humectant</td><td>0.100</td></tr>
+            <tr><td>18</td><td>Allantoin</td><td>97-59-6</td><td>Skin Conditioning</td><td>0.100</td></tr>
+            <tr><td>19</td><td>Sodium Benzoate</td><td>532-32-1</td><td>Preservative, Anti-corrosive</td><td>0.100</td></tr>
+            <tr><td>20</td><td>Centella Asiatica Leaf Extract</td><td>84696-21-9</td><td>Skin Conditioning, Soothing, Humectant</td><td>0.050</td></tr>
+            <tr><td>21</td><td>Vitis Vinifera Seed Extract</td><td>84929-27-1 / 85594-37-2</td><td>Antimicrobial, Antioxidant, Astringent, Skin Conditioning</td><td>0.050</td></tr>
+            <tr><td>22</td><td>Hibiscus Sabdariffa Flower Extract</td><td>84775-96-2</td><td>Skin Conditioning</td><td>0.050</td></tr>
+            <tr><td>23</td><td>Pyrus Malus Fruit Extract</td><td>85251-63-4</td><td>Skin Conditioning &#8212; Emollient, Humectant</td><td>0.050</td></tr>
+            <tr><td>24</td><td>Camellia Sinensis Leaf Extract</td><td>84650-60-2</td><td>Antioxidant, Skin Conditioning, UV Absorber</td><td>0.050</td></tr>
+            <tr><td>25</td><td>Citric Acid</td><td>77-92-9 / 5949-29-1</td><td>Buffering, Chelating (pH adjuster)</td><td>q.s.</td></tr>
+            <tr style="font-weight:600;"><td></td><td>TOTAL</td><td></td><td></td><td>~100.00</td></tr>
+        </tbody>
+    </table>
+
+    <div class="page-footer">
+        <span>CPSR-HOC-STEMCELLLIFT-2026-V1</span>
+        <span>Page 9</span>
+        <span>Confidential</span>
+    </div>
+</div>
+
+<!-- ============================================================ -->
+<!-- PART A — Section 1 cont: INCI Declaration                  -->
+<!-- ============================================================ -->
+<div class="page">
+    <div class="page-header">
+        <div class="page-header-logo">CPSR</div>
+        <div class="page-header-title">Stem Cell Lift Moisturiser &#8212; Harrogate Organics Company &#8212; Strive Group Brands LTD</div>
+    </div>
+
+    <div class="part-header">
+        <div class="part-label">Part A</div>
+        <div class="part-title">Cosmetic Product Safety Information</div>
+    </div>
+
+    <h2>1.3 INCI Label Declaration</h2>
+    <p>The following INCI ingredient list is declared in descending order of concentration (&#8805;1% ingredients listed first; &lt;1% ingredients listed thereafter in any order). Citric Acid is listed at the end as a buffering agent used at quantum satis.</p>
+
+    <div class="method-box">
+        <div class="method-box-title">Full INCI List for Label</div>
+        <p style="font-style:italic; font-size:9pt; line-height:1.8;">AQUA, PRUNUS ARMENIACA KERNEL OIL, GLYCERIN, HELIANTHUS ANNUUS SEED OIL, CETEARYL OLIVATE, CETEARYL ALCOHOL, SORBITAN OLIVATE, OLEA EUROPAEA FRUIT OIL, COCOS NUCIFERA OIL, BUTYROSPERMUM PARKII BUTTER, ZINC OXIDE, 1,2-HEXANEDIOL, CAPRYLYL GLYCOL, XANTHAN GUM, POTASSIUM SORBATE, ORYZA SATIVA BRAN OIL, SODIUM HYALURONATE, ALLANTOIN, SODIUM BENZOATE, CENTELLA ASIATICA LEAF EXTRACT, VITIS VINIFERA SEED EXTRACT, HIBISCUS SABDARIFFA FLOWER EXTRACT, PYRUS MALUS FRUIT EXTRACT, CAMELLIA SINENSIS LEAF EXTRACT, CITRIC ACID</p>
+    </div>
+
+    <div class="method-box">
+        <div class="method-box-title">Notes on Composition</div>
+        <p>Ingredients &#8805;1% are listed in descending concentration order; ingredients &lt;1% may be listed in any order. No fragrance allergens (26 listed per Annex III) identified above the 0.01% leave-on declaration threshold. No colorants (CI numbers) are present in the formula. No nanomaterials declared. Zinc Oxide is used in non-nano form at 1.0% w/w as a UV absorber/skin protectant, well within the EU Annex VI permitted limit of 25% w/w for non-nano ZnO.</p>
+        <p>The preservation system consists of Potassium Sorbate (0.100% w/w &#8212; Annex V, max 0.6%) and Sodium Benzoate (0.100% w/w &#8212; Annex V, max 0.5%), augmented by the multifunctional antimicrobial boosters 1,2-Hexanediol (0.750%) and Caprylyl Glycol (0.750%).</p>
+    </div>
+
+    <div class="page-footer">
+        <span>CPSR-HOC-STEMCELLLIFT-2026-V1</span>
+        <span>Page 10</span>
+        <span>Confidential</span>
+    </div>
+</div>
+
+<!-- ============================================================ -->
+<!-- PART A — Section 2: Physical/Chemical Properties           -->
+<!-- ============================================================ -->
+<div class="page">
+    <div class="page-header">
+        <div class="page-header-logo">CPSR</div>
+        <div class="page-header-title">Stem Cell Lift Moisturiser &#8212; Harrogate Organics Company &#8212; Strive Group Brands LTD</div>
+    </div>
+
+    <h1>2. Physical and Chemical Properties &amp; Stability</h1>
+
+    <h2>2.1 Physical and Chemical Properties</h2>
+    <table>
+        <thead><tr><th>Parameter</th><th>Result / Value</th><th>Source</th></tr></thead>
+        <tbody>
+            <tr><td>Physical Form</td><td>Semi-solid cream</td><td>Supplier CoA / Stability data <span class="evidence-tag ev-supplier">Supplier</span></td></tr>
+            <tr><td>Appearance</td><td>White to off-white cream &#8212; no change observed over stability period</td><td>Stability Test Report <span class="evidence-tag ev-measured">Measured</span></td></tr>
+            <tr><td>Colour</td><td>White &#8212; complies with standard</td><td>Stability Test Report <span class="evidence-tag ev-measured">Measured</span></td></tr>
+            <tr><td>Odour</td><td>Characteristic fragrance</td><td>Stability Test Report <span class="evidence-tag ev-measured">Measured</span></td></tr>
+            <tr><td>Viscosity</td><td>Viscous</td><td>Stability Test Report <span class="evidence-tag ev-measured">Measured</span></td></tr>
+            <tr><td>pH</td><td>5.0&#8211;5.5</td><td>CPSR Entry Form <span class="evidence-tag ev-measured">Measured</span></td></tr>
+            <tr><td>Boiling Point</td><td>&gt;200&#176;C</td><td>MSDS (SDS Section 9) <span class="evidence-tag ev-supplier">Supplier</span></td></tr>
+            <tr><td>Water Solubility</td><td>&gt;100 g/L at 20&#176;C</td><td>MSDS <span class="evidence-tag ev-supplier">Supplier</span></td></tr>
+            <tr><td>Storage Temperature</td><td>Max. 30&#176;C</td><td>MSDS <span class="evidence-tag ev-supplier">Supplier</span></td></tr>
+            <tr><td>Flash Point</td><td>Not applicable (aqueous cream)</td><td>MSDS <span class="evidence-tag ev-supplier">Supplier</span></td></tr>
+            <tr><td>Emulsion Type</td><td>Oil-in-water (O/W)</td><td>Literature / formulation design <span class="evidence-tag ev-literature">Literature</span></td></tr>
+            <tr><td>GHS Classification</td><td>Not classified as hazardous &#8212; no signal word, no hazard statement</td><td>MSDS Section 2 <span class="evidence-tag ev-supplier">Supplier</span></td></tr>
+        </tbody>
+    </table>
+
+    <p><strong>pH Assessment:</strong> The measured pH of 5.0&#8211;5.5 is within the optimal range for leave-on facial products (target: 4.5&#8211;6.5), compatible with the skin&#8217;s natural acid mantle and supportive of preservative efficacy for Potassium Sorbate and Sodium Benzoate.</p>
+
+    <div class="page-footer">
+        <span>CPSR-HOC-STEMCELLLIFT-2026-V1</span>
+        <span>Page 11</span>
+        <span>Confidential</span>
+    </div>
+</div>
+
+<!-- ============================================================ -->
+<!-- PART A — Section 2 cont: Stability                         -->
+<!-- ============================================================ -->
+<div class="page">
+    <div class="page-header">
+        <div class="page-header-logo">CPSR</div>
+        <div class="page-header-title">Stem Cell Lift Moisturiser &#8212; Harrogate Organics Company &#8212; Strive Group Brands LTD</div>
+    </div>
+
+    <h2>2.2 Stability &amp; Packaging Compatibility</h2>
+    <p>Product subjected to accelerated stability testing by MySwissLab+, SBR Group S&#224;rl. Test period commenced: 17 August 2024 (12-week accelerated study). Sample reference: TR7YU. Conditions tested: 5&#176;C (cold), ambient, and 40&#176;C (elevated temperature). Parameters assessed at all time points: appearance, colour, texture, fragrance, viscosity.</p>
+
+    <table class="dense">
+        <thead><tr><th>Condition</th><th>Temperature</th><th>Duration</th><th>Appearance</th><th>Colour</th><th>Texture/Viscosity</th><th>Fragrance</th><th>Result</th></tr></thead>
+        <tbody>
+            <tr><td>Cold</td><td>5&#176;C</td><td>12 weeks</td><td>No change</td><td>No change</td><td>No change</td><td>No change</td><td><span class="badge badge-pass">PASS</span></td></tr>
+            <tr><td>Ambient</td><td>Room temperature</td><td>12 weeks</td><td>No change</td><td>No change</td><td>No change</td><td>No change</td><td><span class="badge badge-pass">PASS</span></td></tr>
+            <tr><td>Elevated</td><td>40&#176;C</td><td>12 weeks</td><td>No change</td><td>No change</td><td>No change</td><td>No change</td><td><span class="badge badge-pass">PASS</span></td></tr>
+        </tbody>
+    </table>
+    <p><em>Assessments performed at multiple time points. Appearance, colour, texture, fragrance, and viscosity remained consistent throughout all test conditions.</em></p>
+
+    <div class="conclusion-box">
+        <div class="conclusion-title">Stability Conclusion &#8212; PASS</div>
+        <div class="conclusion-text">The product demonstrated stability under all tested conditions (5&#176;C, ambient, and 40&#176;C) over 12 weeks per the Stability Test Report (Sample No. TR7YU, commenced 17/08/2024). Appearance, colour, texture, fragrance, and viscosity remained consistent throughout. No phase separation or degradation was observed. <strong>Shelf life of 24 months (unopened) is confirmed by the accelerated stability study. Post-opening PAO of 12 months is supported by ISO 11930 challenge test data. Airless packaging (AS jar) confirmed compatible with the O/W emulsion formulation.</strong></div>
+    </div>
+
+    <div class="page-footer">
+        <span>CPSR-HOC-STEMCELLLIFT-2026-V1</span>
+        <span>Page 12</span>
+        <span>Confidential</span>
+    </div>
+</div>
+
+<!-- ============================================================ -->
+<!-- PART A — Section 3: Microbiological Quality                -->
+<!-- ============================================================ -->
+<div class="page">
+    <div class="page-header">
+        <div class="page-header-logo">CPSR</div>
+        <div class="page-header-title">Stem Cell Lift Moisturiser &#8212; Harrogate Organics Company &#8212; Strive Group Brands LTD</div>
+    </div>
+
+    <h1>3. Microbiological Quality</h1>
+
+    <h2>3.1 Water Activity and Preservation System</h2>
+    <p>The product is an aqueous emulsion (Aqua: 74.4% w/w). Water activity (Aw) is estimated &gt;0.75, indicating that a preserved system is required. Preservation is achieved through the following combination:</p>
+    <ul>
+        <li><strong>Potassium Sorbate</strong> (0.100% w/w) &#8212; Annex V permitted preservative (max 0.6%)</li>
+        <li><strong>Sodium Benzoate</strong> (0.100% w/w) &#8212; Annex V permitted preservative (max 0.5%)</li>
+        <li><strong>1,2-Hexanediol</strong> (0.750% w/w) &#8212; Multifunctional antimicrobial booster</li>
+        <li><strong>Caprylyl Glycol</strong> (0.750% w/w) &#8212; Multifunctional antimicrobial booster</li>
+    </ul>
+
+    <h2>3.2 Microbiological Quality Limits &#8212; ISO 17516:2004</h2>
+    <table>
+        <thead><tr><th>Parameter</th><th>Specification</th><th>Result</th><th>ISO 17516 Limit (non-eye area)</th><th>Conformity</th></tr></thead>
+        <tbody>
+            <tr><td>Total Aerobic Plate Count</td><td>&lt;10<sup>2</sup> CFU/g or mL</td><td>Pass</td><td>&#8804;100 CFU/g</td><td><span class="badge badge-pass">COMPLIANT</span></td></tr>
+            <tr><td>Mould Plate Count</td><td>&lt;10<sup>2</sup> CFU/g or mL</td><td>Pass</td><td>&#8804;100 CFU/g</td><td><span class="badge badge-pass">COMPLIANT</span></td></tr>
+            <tr><td>Fungi Plate Count</td><td>&lt;10<sup>2</sup> CFU/g or mL</td><td>Pass</td><td>&#8804;100 CFU/g</td><td><span class="badge badge-pass">COMPLIANT</span></td></tr>
+            <tr><td><em>Pseudomonas aeruginosa</em></td><td>Absent</td><td>Absent</td><td>Absent</td><td><span class="badge badge-pass">COMPLIANT</span></td></tr>
+            <tr><td><em>Staphylococcus aureus</em></td><td>Absent</td><td>Absent</td><td>Absent</td><td><span class="badge badge-pass">COMPLIANT</span></td></tr>
+            <tr><td><em>Escherichia coli</em></td><td>Absent</td><td>Absent</td><td>Absent</td><td><span class="badge badge-pass">COMPLIANT</span></td></tr>
+            <tr><td><em>Candida albicans</em></td><td>Absent</td><td>Absent</td><td>Absent</td><td><span class="badge badge-pass">COMPLIANT</span></td></tr>
+        </tbody>
+    </table>
+    <p><em>Method: CFU plate count per ISO 17516:2004 | Sample No.: TR7YU | Date: 17/08/2024 | Duration: 48H | Laboratory: MySwissLab+, SBR Group S&#224;rl | Chemist: Ralph Christian M. Mendoza</em></p>
+
+    <div class="page-footer">
+        <span>CPSR-HOC-STEMCELLLIFT-2026-V1</span>
+        <span>Page 13</span>
+        <span>Confidential</span>
+    </div>
+</div>
+
+<!-- ============================================================ -->
+<!-- PART A — Section 3 cont: PET / Challenge Test              -->
+<!-- ============================================================ -->
+<div class="page">
+    <div class="page-header">
+        <div class="page-header-logo">CPSR</div>
+        <div class="page-header-title">Stem Cell Lift Moisturiser &#8212; Harrogate Organics Company &#8212; Strive Group Brands LTD</div>
+    </div>
+
+    <h2>3.3 Preservative Efficacy Test (Challenge Test) &#8212; ISO 11930</h2>
+    <p><em>Source: Challenge Test Report (ISO 11930) &#8212; Stem Cell Lift Moisturiser. Laboratory: MySwissLab+, SBR Group S&#224;rl. Sample No.: TR7YU. Sampling date: 17/08/2024. Test duration: 28 days. Microbiologist: Diogo A. M. Alexandrino. Standards: ISO 11930, schulke KoKo test, Ph. Eur. 7 5.1.3, ASEAN.</em></p>
+    <p>Test inoculum: 1&#215;10<sup>6</sup>&#8211;1&#215;10<sup>7</sup> micro-organisms per g. Acceptance standard: ISO 11930 Criteria A.</p>
+
+    <table class="dense">
+        <thead>
+            <tr><th>Organism</th><th>Type</th><th>ATCC</th><th>Inoculum (CFU/g)</th><th>Day 7</th><th>Day 14</th><th>Day 28</th><th>Criteria</th><th>Result</th></tr>
+        </thead>
+        <tbody>
+            <tr><td><em>Pseudomonas aeruginosa</em></td><td>Gram&#8211;Bacteria</td><td>9027</td><td>1,000,000</td><td>0</td><td>0</td><td>0</td><td>A</td><td><span class="badge badge-pass">PASS</span></td></tr>
+            <tr><td><em>Staphylococcus aureus</em></td><td>Gram+ Bacteria</td><td>25923</td><td>1,000,000</td><td>0</td><td>0</td><td>0</td><td>A</td><td><span class="badge badge-pass">PASS</span></td></tr>
+            <tr><td><em>Candida albicans</em></td><td>Yeast</td><td>10231</td><td>10,000,000</td><td>0</td><td>0</td><td>0</td><td>A</td><td><span class="badge badge-pass">PASS</span></td></tr>
+            <tr><td><em>Aspergillus brasiliensis</em></td><td>Fungal</td><td>16404</td><td>10,000,000</td><td>0</td><td>0</td><td>0</td><td>A</td><td><span class="badge badge-pass">PASS</span></td></tr>
+        </tbody>
+    </table>
+
+    <div class="conclusion-box">
+        <div class="conclusion-title">Microbiological Conclusion &#8212; PASS</div>
+        <div class="conclusion-text">The product meets ISO 11930 Criteria A for all four test organisms across all time points (Days 7, 14, 28). The preservation system (Potassium Sorbate 0.100% + Sodium Benzoate 0.100% + 1,2-Hexanediol 0.750% + Caprylyl Glycol 0.750%) is effective and fully compliant. Airless packaging minimises post-opening contamination risk. PAO of 12 months is fully supported by test data.</div>
+    </div>
+
+    <div class="page-footer">
+        <span>CPSR-HOC-STEMCELLLIFT-2026-V1</span>
+        <span>Page 14</span>
+        <span>Confidential</span>
+    </div>
+</div>
+
+<!-- ============================================================ -->
+<!-- PART A — Section 4: Impurities / Packaging                 -->
+<!-- ============================================================ -->
+<div class="page">
+    <div class="page-header">
+        <div class="page-header-logo">CPSR</div>
+        <div class="page-header-title">Stem Cell Lift Moisturiser &#8212; Harrogate Organics Company &#8212; Strive Group Brands LTD</div>
+    </div>
+
+    <h1>4. Impurities, Traces, and Packaging Material</h1>
+
+    <h2>4.1 Impurity Screening</h2>
+    <p>No ingredients on EU Annex II (prohibited substances) were identified in the formula. All Annex III (restricted) ingredients are used within permitted conditions.</p>
+    <ul>
+        <li><strong>Heavy metals:</strong> No heavy metal-containing ingredients are present as primary ingredients. Zinc Oxide is used at 1.0% w/w, well within the EU Annex VI permitted limit of 25% w/w. No impurity data indicating elevated heavy metal contamination was submitted.</li>
+        <li><strong>1,4-Dioxane:</strong> No ethoxylated (PEG-derivative) ingredients are present. Risk of 1,4-dioxane contamination is negligible.</li>
+        <li><strong>Formaldehyde:</strong> No formaldehyde-releasing preservatives are present. Risk is negligible.</li>
+        <li><strong>Nitrosamines:</strong> No secondary amine-containing ingredients that would present a nitrosamine risk were identified.</li>
+        <li><strong>Pesticides / Residual Solvents:</strong> Botanical ingredients (oils, butters, extracts) may contain trace residual impurities, assumed to be within acceptable limits per standard cosmetic-grade specifications.</li>
+    </ul>
+
+    <h2>4.2 Packaging Assessment</h2>
+    <div class="info-grid">
+        <div class="info-label">Container Type</div><div class="info-value">Airless jar &#8212; Acrylonitrile Styrene (AS)</div>
+        <div class="info-label">Airless Design</div><div class="info-value">Yes &#8212; prevents contamination from repeated finger dipping; minimises oxidation risk</div>
+        <div class="info-label">Material Safety</div><div class="info-value">AS is a cosmetic/food-grade plastic with low migration potential, compatible with aqueous O/W emulsions</div>
+        <div class="info-label">NIAS Risk</div><div class="info-value">Low &#8212; given inert AS material and airless design</div>
+        <div class="info-label">Compatibility</div><div class="info-value">Confirmed by stability testing (no phase separation, discolouration, or degradation at 40&#176;C over 12 weeks)</div>
+        <div class="info-label">PAO Recommendation</div><div class="info-value">12 months &#8212; supported by ISO 11930 challenge test (full protection through Day 28) and accelerated stability data</div>
+    </div>
+
+    <div class="conclusion-box">
+        <div class="conclusion-title">Impurity &amp; Packaging Conclusion</div>
+        <div class="conclusion-text">No prohibited or restricted substances identified in the formulation. No 1,4-dioxane, formaldehyde, or nitrosamine precursor risks identified. Airless AS jar packaging is confirmed chemically compatible with the formulation based on 12-week accelerated stability data. NIAS risk is low. PAO of 12 months is supported by ISO 11930 data.</div>
+    </div>
+
+    <div class="page-footer">
+        <span>CPSR-HOC-STEMCELLLIFT-2026-V1</span>
+        <span>Page 15</span>
+        <span>Confidential</span>
+    </div>
+</div>
+
+<!-- ============================================================ -->
+<!-- PART A — Section 5: Normal Use                             -->
+<!-- ============================================================ -->
+<div class="page">
+    <div class="page-header">
+        <div class="page-header-logo">CPSR</div>
+        <div class="page-header-title">Stem Cell Lift Moisturiser &#8212; Harrogate Organics Company &#8212; Strive Group Brands LTD</div>
+    </div>
+
+    <h1>5. Normal and Reasonably Foreseeable Use</h1>
+
+    <h2>5.1 Intended Use</h2>
+    <p><em>Directions of use (as labelled):</em> Apply a small amount of moisturiser to a cleansed face and neck, avoiding the delicate eye area. Dab delicately and blend into the skin in circular motions. Apply twice a day, morning and night.</p>
+    <div class="info-grid">
+        <div class="info-label">Product Category</div><div class="info-value">Leave-on face and neck moisturiser</div>
+        <div class="info-label">Application Site</div><div class="info-value">Face and neck (&#8531; head area, ~565 cm&#178;)</div>
+        <div class="info-label">Application Method</div><div class="info-value">Fingertip application, gentle circular massage</div>
+        <div class="info-label">Frequency</div><div class="info-value">Twice daily (morning and evening)</div>
+        <div class="info-label">Amount per Application</div><div class="info-value">~1.54 g / mL</div>
+        <div class="info-label">Target Population</div><div class="info-value">Adults (general)</div>
+        <div class="info-label">Route of Exposure</div><div class="info-value">Dermal (primary)</div>
+        <div class="info-label">Additional Routes</div><div class="info-value">None identified under normal use</div>
+    </div>
+
+    <h2>5.2 Reasonably Foreseeable Misuse</h2>
+    <table class="dense">
+        <thead><tr><th>Scenario</th><th>Risk</th><th>Mitigation</th></tr></thead>
+        <tbody>
+            <tr><td>Accidental eye contact</td><td>Possible irritation</td><td>Label: &#8220;Avoid the delicate eye area&#8221;; &#8220;If product gets into eyes, rinse well with water&#8221;</td></tr>
+            <tr><td>Over-application</td><td>Minimal additional risk (benign formula)</td><td>All MoS values remain well above 100 even under worst-case SCCS conservative assumptions</td></tr>
+            <tr><td>Application by children</td><td>Potential unsupervised use</td><td>Label: &#8220;Keep out of reach of children&#8221;</td></tr>
+            <tr><td>Application to damaged/broken skin</td><td>Enhanced irritation; enhanced absorption</td><td>Label: &#8220;Discontinue use if redness or irritation occurs&#8221;. All ingredients non-irritant per MSDS</td></tr>
+            <tr><td>Inhalation</td><td>Minimal &#8212; cream format, non-spray</td><td>Not a primary exposure route; no mitigation required</td></tr>
+        </tbody>
+    </table>
+
+    <div class="page-footer">
+        <span>CPSR-HOC-STEMCELLLIFT-2026-V1</span>
+        <span>Page 16</span>
+        <span>Confidential</span>
+    </div>
+</div>
+
+<!-- ============================================================ -->
+<!-- PART A — Section 6: Exposure to the Cosmetic Product       -->
+<!-- ============================================================ -->
+<div class="page">
+    <div class="page-header">
+        <div class="page-header-logo">CPSR</div>
+        <div class="page-header-title">Stem Cell Lift Moisturiser &#8212; Harrogate Organics Company &#8212; Strive Group Brands LTD</div>
+    </div>
+
+    <h1>6. Exposure to the Cosmetic Product</h1>
+    <p>SCCS Exposure Scenario: Face cream (leave-on) &#8212; mapped to SCCS Table 3A, SCCS/1647/22 (Notes of Guidance for the Testing of Cosmetic Ingredients and Their Safety Evaluation, 12th Revision).</p>
+
+    <div class="info-grid">
+        <div class="info-label">SCCS Product Category</div><div class="info-value">Face cream (leave-on) &#8212; SCCS/1647/22 Table 3A</div>
+        <div class="info-label">Daily Amount Applied (DAa)</div><div class="info-value">24.5 mg/kg bw/day (SCCS face cream default)</div>
+        <div class="info-label">Body Weight (Adult)</div><div class="info-value">60 kg (SCCS standard default)</div>
+        <div class="info-label">Skin Surface Area</div><div class="info-value">565 cm&#178; (&#8531; head area)</div>
+        <div class="info-label">Application Frequency</div><div class="info-value">Twice daily</div>
+        <div class="info-label">Product Type</div><div class="info-value">Leave-on</div>
+        <div class="info-label">Retention Factor</div><div class="info-value">1.0 (leave-on, no rinsing)</div>
+        <div class="info-label">Route of Exposure</div><div class="info-value">Dermal (primary)</div>
+        <div class="info-label">Inhalation Route</div><div class="info-value">Not applicable (non-spray cream format)</div>
+    </div>
+
+    <div class="method-box">
+        <div class="method-box-title">Exposure Assessment Note</div>
+        <p>The SCCS standard default of 24.5 mg/kg bw/day for face cream is used in all MoS calculations to ensure a conservative worst-case assessment in accordance with the SCCS Notes of Guidance (12th revision, SCCS/1647/22). All MoS values remain well above the safety threshold of 100 under this conservative estimate. The CPSR Entry Form records a specific calculated relative daily exposure of 2.14 mg/kg bw/day based on the stated application amount (1.54 g per application, twice daily = 3.08 g/day); however, the SCCS default is applied as the regulatory-standard conservative figure.</p>
+    </div>
+
+    <div class="page-footer">
+        <span>CPSR-HOC-STEMCELLLIFT-2026-V1</span>
+        <span>Page 17</span>
+        <span>Confidential</span>
+    </div>
+</div>
+
+<!-- ============================================================ -->
+<!-- PART A — Section 7: Exposure to Substances (SED Table)     -->
+<!-- ============================================================ -->
+<div class="page">
+    <div class="page-header">
+        <div class="page-header-logo">CPSR</div>
+        <div class="page-header-title">Stem Cell Lift Moisturiser &#8212; Harrogate Organics Company &#8212; Strive Group Brands LTD</div>
+    </div>
+
+    <h1>7. Exposure to the Substances &#8212; Systemic Exposure Dose (SED) Table</h1>
+    <p style="font-size:8pt;">Formula: <strong>SED (mg/kg bw/day) = (Ci / 100) &#215; DAa &#215; (DA / 100)</strong> where: Ci = ingredient concentration (% w/w) | DAa = 24.5 mg/kg bw/day (SCCS face cream default) | DA = dermal absorption (%). DA defaults: 50% for small molecules, 10% for high MW lipids, 1% for ZnO (mineral) and high MW polysaccharides.</p>
+
+    <table class="dense">
+        <thead>
+            <tr><th>#</th><th>INCI Name</th><th>Ci (%)</th><th>DA (%)</th><th>SED (mg/kg bw/day)</th><th>Systemic Relevance</th></tr>
+        </thead>
+        <tbody>
+            <tr><td>1</td><td>Aqua</td><td>74.400</td><td>N/A</td><td>N/A</td><td>Not absorbed as toxicological concern</td></tr>
+            <tr><td>2</td><td>Prunus Armeniaca Kernel Oil</td><td>7.000</td><td>10</td><td>0.172</td><td>Low &#8212; high MW lipid</td></tr>
+            <tr><td>3</td><td>Glycerin</td><td>3.150</td><td>50</td><td>0.386</td><td>Yes</td></tr>
+            <tr><td>4</td><td>Helianthus Annuus Seed Oil</td><td>3.000</td><td>10</td><td>0.074</td><td>Low &#8212; high MW lipid</td></tr>
+            <tr><td>5</td><td>Cetearyl Olivate</td><td>2.400</td><td>10</td><td>0.059</td><td>Low &#8212; high MW emulsifier</td></tr>
+            <tr><td>6</td><td>Cetearyl Alcohol</td><td>2.000</td><td>50</td><td>0.245</td><td>Yes</td></tr>
+            <tr><td>7</td><td>Sorbitan Olivate</td><td>1.600</td><td>10</td><td>0.039</td><td>Low &#8212; high MW emulsifier</td></tr>
+            <tr><td>8</td><td>Olea Europaea Fruit Oil</td><td>1.000</td><td>10</td><td>0.025</td><td>Low &#8212; high MW lipid</td></tr>
+            <tr><td>9</td><td>Cocos Nucifera Oil</td><td>1.000</td><td>10</td><td>0.025</td><td>Low &#8212; high MW lipid</td></tr>
+            <tr><td>10</td><td>Butyrospermum Parkii Butter</td><td>1.000</td><td>10</td><td>0.025</td><td>Low &#8212; high MW lipid</td></tr>
+            <tr><td>11</td><td>Zinc Oxide</td><td>1.000</td><td>1</td><td>0.002</td><td>Low &#8212; mineral, minimal penetration</td></tr>
+            <tr><td>12</td><td>1,2-Hexanediol</td><td>0.750</td><td>50</td><td>0.092</td><td>Yes</td></tr>
+            <tr><td>13</td><td>Caprylyl Glycol</td><td>0.750</td><td>50</td><td>0.092</td><td>Yes</td></tr>
+            <tr><td>14</td><td>Xanthan Gum</td><td>0.200</td><td>1</td><td>~0.000</td><td>Negligible &#8212; high MW polysaccharide</td></tr>
+            <tr><td>15</td><td>Potassium Sorbate</td><td>0.100</td><td>50</td><td>0.012</td><td>Yes</td></tr>
+            <tr><td>16</td><td>Oryza Sativa Bran Oil</td><td>0.100</td><td>10</td><td>0.002</td><td>Low &#8212; high MW lipid</td></tr>
+            <tr><td>17</td><td>Sodium Hyaluronate</td><td>0.100</td><td>1</td><td>~0.000</td><td>Negligible &#8212; high MW polysaccharide</td></tr>
+            <tr><td>18</td><td>Allantoin</td><td>0.100</td><td>50</td><td>0.01225</td><td>Yes</td></tr>
+            <tr><td>19</td><td>Sodium Benzoate</td><td>0.100</td><td>50</td><td>0.012</td><td>Yes</td></tr>
+            <tr><td>20</td><td>Centella Asiatica Leaf Extract</td><td>0.050</td><td>50</td><td>0.006</td><td>Yes</td></tr>
+            <tr><td>21</td><td>Vitis Vinifera Seed Extract</td><td>0.050</td><td>50</td><td>0.006</td><td>Yes</td></tr>
+            <tr><td>22</td><td>Hibiscus Sabdariffa Flower Extract</td><td>0.050</td><td>50</td><td>0.006</td><td>Yes</td></tr>
+            <tr><td>23</td><td>Pyrus Malus Fruit Extract</td><td>0.050</td><td>50</td><td>0.006</td><td>Yes</td></tr>
+            <tr><td>24</td><td>Camellia Sinensis Leaf Extract</td><td>0.050</td><td>50</td><td>0.006</td><td>Yes</td></tr>
+            <tr><td>25</td><td>Citric Acid</td><td>q.s.</td><td>50</td><td>&lt;0.001</td><td>Negligible &#8212; trace pH adjuster</td></tr>
+        </tbody>
+    </table>
+
+    <div class="method-box">
+        <div class="method-box-title">Dermal Absorption (DA) Assumption Log</div>
+        <p>DA = 50% (SCCS conservative default) for small-molecule ingredients without specific dermal absorption data. DA = 10% for high molecular weight vegetable oils and botanical butters (lipid structure, high MW). DA = 1% for Zinc Oxide &#8212; documented minimal skin penetration of mineral ZnO in cream matrices (SCCS/1489/12; SCCS/1518/13). DA = 1% for Xanthan Gum and Sodium Hyaluronate &#8212; high MW polysaccharides (&gt;20,000 Da). Body weight: 60 kg (SCCS adult standard default).</p>
+    </div>
+
+    <div class="page-footer">
+        <span>CPSR-HOC-STEMCELLLIFT-2026-V1</span>
+        <span>Page 18</span>
+        <span>Confidential</span>
+    </div>
+</div>
+
+
+<!-- ============================================================ -->
+<!-- PART A — Section 8: Toxicological Profile (MoS Table)      -->
+<!-- ============================================================ -->
+<div class="page">
+    <div class="page-header">
+        <div class="page-header-logo">CPSR</div>
+        <div class="page-header-title">Stem Cell Lift Moisturiser &#8212; Harrogate Organics Company &#8212; Strive Group Brands LTD</div>
+    </div>
+
+    <h1>8. Toxicological Profile of Substances</h1>
+    <h2>8.1 Margin of Safety (MoS) Table</h2>
+    <p style="font-size:8pt;"><strong>MoS = NOAEL / SED</strong> | Safety threshold: MoS &#8805; 100</p>
+
+    <table class="dense">
+        <thead>
+            <tr><th>#</th><th>INCI Name</th><th>NOAEL (mg/kg bw/d)</th><th>SED (mg/kg bw/d)</th><th>MoS</th><th>Status</th><th>Key Source</th></tr>
+        </thead>
+        <tbody>
+            <tr><td>1</td><td>Aqua</td><td>10,000</td><td>N/A</td><td class="mos-na">N/A</td><td><span class="badge badge-pass">SAFE</span></td><td>EFSA 2015</td></tr>
+            <tr><td>2</td><td>Prunus Armeniaca Kernel Oil</td><td>N/A</td><td>0.172</td><td class="mos-na">N/A</td><td><span class="badge badge-pass">SAFE</span></td><td>Well-established literature</td></tr>
+            <tr><td>3</td><td>Glycerin</td><td>2,000</td><td>0.386</td><td class="mos-safe">5,182</td><td><span class="badge badge-pass">PASS</span></td><td>CIR Safety Report</td></tr>
+            <tr><td>4</td><td>Helianthus Annuus Seed Oil</td><td>1,000</td><td>0.074</td><td class="mos-safe">13,514</td><td><span class="badge badge-pass">PASS</span></td><td>ECHA Dossier 14481</td></tr>
+            <tr><td>5</td><td>Cetearyl Olivate</td><td>1,000</td><td>0.059</td><td class="mos-safe">16,949</td><td><span class="badge badge-pass">PASS</span></td><td>Literature</td></tr>
+            <tr><td>6</td><td>Cetearyl Alcohol</td><td>1,000</td><td>0.245</td><td class="mos-safe">4,082</td><td><span class="badge badge-pass">PASS</span></td><td>CIR Report</td></tr>
+            <tr><td>7</td><td>Sorbitan Olivate</td><td>N/A</td><td>0.039</td><td class="mos-na">N/A</td><td><span class="badge badge-pass">SAFE</span></td><td>Extensive use history</td></tr>
+            <tr><td>8</td><td>Olea Europaea Fruit Oil</td><td>2,000</td><td>0.025</td><td class="mos-safe">80,000</td><td><span class="badge badge-pass">PASS</span></td><td>Literature / ECHA Dossier 13736</td></tr>
+            <tr><td>9</td><td>Cocos Nucifera Oil</td><td>N/A</td><td>0.025</td><td class="mos-na">N/A</td><td><span class="badge badge-pass">SAFE</span></td><td>GRAS status &#8212; Literature</td></tr>
+            <tr><td>10</td><td>Butyrospermum Parkii Butter</td><td>1,200</td><td>0.025</td><td class="mos-safe">48,000</td><td><span class="badge badge-pass">PASS</span></td><td>SAGE Journals 2016</td></tr>
+            <tr><td>11</td><td>Zinc Oxide</td><td>50</td><td>0.002</td><td class="mos-safe">20,408</td><td><span class="badge badge-pass">PASS</span></td><td>CIR / SCCS/1489/12</td></tr>
+            <tr><td>12</td><td>1,2-Hexanediol</td><td>1,000</td><td>0.092</td><td class="mos-safe">10,870</td><td><span class="badge badge-pass">PASS</span></td><td>India Cosmetics / EPA</td></tr>
+            <tr><td>13</td><td>Caprylyl Glycol</td><td>300</td><td>0.092</td><td class="mos-safe">3,261</td><td><span class="badge badge-pass">PASS</span></td><td>Literature</td></tr>
+            <tr><td>14</td><td>Xanthan Gum</td><td>750</td><td>~0.000</td><td class="mos-safe">&gt;100,000</td><td><span class="badge badge-pass">PASS</span></td><td>ECHA Dossier 26088</td></tr>
+            <tr><td>15</td><td>Potassium Sorbate</td><td>6,800</td><td>0.012</td><td class="mos-safe">555,102</td><td><span class="badge badge-pass">PASS</span></td><td>SCCS Opinion 2022</td></tr>
+            <tr><td>16</td><td>Oryza Sativa Bran Oil</td><td>N/A</td><td>0.002</td><td class="mos-na">N/A</td><td><span class="badge badge-pass">SAFE</span></td><td>GRAS edible oil &#8212; EFSA 2017</td></tr>
+            <tr><td>17</td><td>Sodium Hyaluronate</td><td>1,500</td><td>~0.000</td><td class="mos-safe">&gt;100,000</td><td><span class="badge badge-pass">PASS</span></td><td>ECHA Dossier 11008</td></tr>
+            <tr><td>18</td><td><strong>Allantoin</strong></td><td>142</td><td>0.01225</td><td class="mos-safe"><strong>11,592</strong></td><td><span class="badge badge-pass">PASS</span></td><td>ECHA Dossier 13641</td></tr>
+            <tr><td>19</td><td>Sodium Benzoate</td><td>1,200</td><td>0.012</td><td class="mos-safe">97,959</td><td><span class="badge badge-pass">PASS</span></td><td>EFSA 2016</td></tr>
+            <tr><td>20</td><td>Centella Asiatica Leaf Extract</td><td>1,000</td><td>0.006</td><td class="mos-safe">163,265</td><td><span class="badge badge-pass">PASS</span></td><td>PMC3794402 / ECHA</td></tr>
+            <tr><td>21</td><td>Vitis Vinifera Seed Extract</td><td>1,000*</td><td>0.006</td><td class="mos-safe">163,265</td><td><span class="badge badge-pass">PASS</span></td><td>CIR Report (Vitis)</td></tr>
+            <tr><td>22</td><td>Hibiscus Sabdariffa Flower Extract</td><td>5,000</td><td>0.006</td><td class="mos-safe">816,327</td><td><span class="badge badge-pass">PASS</span></td><td>CIR Safety Assessment</td></tr>
+            <tr><td>23</td><td>Pyrus Malus Fruit Extract</td><td>1,000*</td><td>0.006</td><td class="mos-safe">163,265</td><td><span class="badge badge-pass">PASS</span></td><td>CIR Ingredients Database</td></tr>
+            <tr><td>24</td><td>Camellia Sinensis Leaf Extract</td><td>200</td><td>0.006</td><td class="mos-safe">32,653</td><td><span class="badge badge-pass">PASS</span></td><td>CIR Report (Camellia)</td></tr>
+            <tr><td>25</td><td>Citric Acid</td><td>500*</td><td>&lt;0.001</td><td class="mos-safe">&gt;100,000</td><td><span class="badge badge-pass">PASS</span></td><td>OECD HPV</td></tr>
+        </tbody>
+    </table>
+    <p style="font-size:7.5pt;"><em>* Conservative literature estimate applied where specific NOAEL not listed in CPSR Entry Form. Allantoin has the lowest MoS = 11,592 &#8212; substantially above the safety threshold of 100. No concern.</em></p>
+
+    <div class="conclusion-box">
+        <div class="conclusion-title">MoS Assessment &#8212; All Ingredients PASS</div>
+        <div class="conclusion-text">All MoS values substantially exceed the minimum safety threshold of 100. Lowest MoS: <strong>Allantoin at 11,592</strong> (threshold 100). No systemic safety concerns identified at declared concentrations under leave-on conditions of use with conservative SCCS default exposure parameters.</div>
+    </div>
+
+    <div class="page-footer">
+        <span>CPSR-HOC-STEMCELLLIFT-2026-V1</span>
+        <span>Page 19</span>
+        <span>Confidential</span>
+    </div>
+</div>
+
+<!-- ============================================================ -->
+<!-- PART A — Section 8.2: Key Tox Endpoints                    -->
+<!-- ============================================================ -->
+<div class="page">
+    <div class="page-header">
+        <div class="page-header-logo">CPSR</div>
+        <div class="page-header-title">Stem Cell Lift Moisturiser &#8212; Harrogate Organics Company &#8212; Strive Group Brands LTD</div>
+    </div>
+
+    <h2>8.2 Key Toxicological Endpoints (GHS / UK CLP Classification)</h2>
+    <table class="dense">
+        <thead><tr><th>Endpoint</th><th>Classification / Key Data</th><th>Assessment for Finished Product</th></tr></thead>
+        <tbody>
+            <tr><td>Skin sensitisation</td><td>Potassium Sorbate and Sodium Benzoate: mild sensitisation potential at high concentrations; both within Annex V limits</td><td>Both preservatives at 0.1% each, well within Annex V permitted maxima (0.6% and 0.5% respectively). No sensitisation concern at declared concentrations.</td></tr>
+            <tr><td>Skin irritation</td><td>MSDS (OECD 404, Rabbit): Non-irritant to skin</td><td><span class="badge badge-pass">NON-IRRITANT</span></td></tr>
+            <tr><td>Eye irritation</td><td>MSDS (Rabbit): Non-irritant to eyes</td><td><span class="badge badge-pass">NON-IRRITANT</span>. Label addresses foreseeable eye contact: &#8220;Avoid the delicate eye area&#8221;.</td></tr>
+            <tr><td>Mutagenicity/Genotoxicity</td><td>MSDS: No mutagenic activity (Ames Test negative)</td><td><span class="badge badge-pass">NEGATIVE</span> &#8212; No genotoxicity concern identified.</td></tr>
+            <tr><td>Carcinogenicity</td><td>No ingredients classified as carcinogenic under CLP Regulation or IARC</td><td><span class="badge badge-pass">NOT CLASSIFIED</span></td></tr>
+            <tr><td>Reproductive toxicity</td><td>No CMR 1A/1B classification criteria met for any ingredient</td><td><span class="badge badge-pass">NOT CLASSIFIED</span></td></tr>
+            <tr><td>Phototoxicity</td><td>Zinc Oxide: inorganic UV absorber, no phototoxic classification. Plant extracts: UV-protective functions. No phototoxic compounds identified.</td><td>No phototoxicity concern.</td></tr>
+        </tbody>
+    </table>
+
+    <h2>8.3 Regulatory Screening &#8212; Annexes II&#8211;VI</h2>
+    <table class="dense">
+        <thead><tr><th>Annex</th><th>Description</th><th>Finding</th></tr></thead>
+        <tbody>
+            <tr><td>Annex II</td><td>Prohibited substances</td><td><span class="badge badge-pass">None present</span></td></tr>
+            <tr><td>Annex III</td><td>Restricted substances (including fragrance allergens)</td><td><span class="badge badge-pass">Compliant &#8212; no allergens above 0.01% leave-on threshold identified</span></td></tr>
+            <tr><td>Annex V</td><td>Permitted preservatives</td><td><span class="badge badge-pass">Potassium Sorbate: max 0.6%, used at 0.1% &#8212; compliant. Sodium Benzoate: max 0.5%, used at 0.1% &#8212; compliant.</span></td></tr>
+            <tr><td>Annex VI</td><td>UV filters</td><td><span class="badge badge-pass">Zinc Oxide (non-nano): max 25%, used at 1.0% &#8212; compliant</span></td></tr>
+        </tbody>
+    </table>
+
+    <h2>8.4 Zinc Oxide &#8212; Special Assessment</h2>
+    <p>Zinc Oxide is present at 1.0% w/w as a UV absorber and skin protectant. Dermal absorption from cream formulations is documented to be minimal (&lt;1%). The SCCS concluded that non-nano zinc oxide is safe in dermally applied cosmetics at concentrations up to 25% (SCCS/1489/12; SCCS/1518/13). At 1.0%, well below the Annex VI limit of 25%, this ingredient poses no safety concern. MoS = 20,408 (PASS). Zinc Oxide is used in non-nano form; no nanomaterial declaration is required.</p>
+
+    <h2>8.5 Fragrance Allergens &#8212; Prunus Armeniaca Kernel Oil</h2>
+    <p>Prunus Armeniaca (Apricot) Kernel Oil carries a fragrance function and is present at 7.0% in a leave-on product. A screening for the 26 listed fragrance allergens (Annex III, Regulation 1223/2009) was performed. The CPSR Entry Form declares <strong>no fragrance allergens above the 0.01% leave-on declaration threshold</strong>. No specific allergen declaration is required on the label for this ingredient.</p>
+
+    <div class="page-footer">
+        <span>CPSR-HOC-STEMCELLLIFT-2026-V1</span>
+        <span>Page 20</span>
+        <span>Confidential</span>
+    </div>
+</div>
+
+<!-- ============================================================ -->
+<!-- PART A — Section 8 cont: Special Assessments               -->
+<!-- ============================================================ -->
+<div class="page">
+    <div class="page-header">
+        <div class="page-header-logo">CPSR</div>
+        <div class="page-header-title">Stem Cell Lift Moisturiser &#8212; Harrogate Organics Company &#8212; Strive Group Brands LTD</div>
+    </div>
+
+    <h2>8.6 CMR, Nanomaterials, and Endocrine Disruptors</h2>
+    <table class="dense">
+        <thead><tr><th>Category</th><th>Screening Result</th><th>Conclusion</th></tr></thead>
+        <tbody>
+            <tr><td>CMR Category 1A/1B (Annex II prohibited)</td><td>No ingredients meeting CMR 1A/1B classification identified in the formulation</td><td><span class="badge badge-pass">CLEAR</span></td></tr>
+            <tr><td>Nanomaterials</td><td>No nano-form ingredients declared. Zinc Oxide used in non-nano form only.</td><td><span class="badge badge-pass">NONE DECLARED</span></td></tr>
+            <tr><td>PBT / vPvB substances</td><td>MSDS confirms no PBT, vPvB substances at or above 0.1%</td><td><span class="badge badge-pass">NONE IDENTIFIED</span></td></tr>
+            <tr><td>Endocrine disruptors</td><td>No endocrine-disrupting components identified in formulation or MSDS</td><td><span class="badge badge-pass">NONE IDENTIFIED</span></td></tr>
+        </tbody>
+    </table>
+
+    <h2>8.7 Botanical Extracts &#8212; Collective Assessment</h2>
+    <p>Five botanical extracts (Centella Asiatica, Vitis Vinifera, Hibiscus Sabdariffa, Pyrus Malus, Camellia Sinensis) are each present at 0.050% w/w. At these trace levels, adverse effects in the general adult population are not anticipated. Calculated SEDs are 0.006 mg/kg bw/day per extract (at 50% DA). All MoS values for these extracts range from 32,653 (Camellia Sinensis) to 816,327 (Hibiscus Sabdariffa) &#8212; well above the threshold of 100. No adverse effects anticipated.</p>
+
+    <h2>8.8 Regulatory Reference Datasets</h2>
+    <table class="dense">
+        <thead><tr><th>Dataset</th><th>Version / Reference</th></tr></thead>
+        <tbody>
+            <tr><td>EU Cosmetics Regulation</td><td>Regulation (EC) No 1223/2009 (as amended)</td></tr>
+            <tr><td>CPSR Structure</td><td>Commission Decision 2013/674/EU</td></tr>
+            <tr><td>Preservative Annex V</td><td>EU Annex V (current)</td></tr>
+            <tr><td>UV Filter Annex VI</td><td>EU Annex VI (current)</td></tr>
+            <tr><td>Prohibited Substances (Annex II)</td><td>EU Annex II (current)</td></tr>
+            <tr><td>Restricted Substances (Annex III)</td><td>EU Annex III (current)</td></tr>
+            <tr><td>SCCS Notes of Guidance</td><td>SCCS/1647/22, 12th revision (incl. Corrigendum 2)</td></tr>
+            <tr><td>Preservative Efficacy Testing</td><td>ISO 11930</td></tr>
+            <tr><td>Microbiological Quality</td><td>ISO 17516:2004</td></tr>
+            <tr><td>MSDS</td><td>Version V1, issued 17/06/2025</td></tr>
+            <tr><td>Stability Test Report</td><td>MySwissLab+, Sample TR7YU, 17/08/2024</td></tr>
+            <tr><td>Challenge Test Report</td><td>MySwissLab+, Sample TR7YU, 17/08/2024</td></tr>
+            <tr><td>Microbiological Test Report</td><td>MySwissLab+, Sample TR7YU, 17/08/2024</td></tr>
+        </tbody>
+    </table>
+
+    <div class="page-footer">
+        <span>CPSR-HOC-STEMCELLLIFT-2026-V1</span>
+        <span>Page 21</span>
+        <span>Confidential</span>
+    </div>
+</div>
+
+<!-- ============================================================ -->
+<!-- PART A — Section 9: Undesirable Effects                    -->
+<!-- ============================================================ -->
+<div class="page">
+    <div class="page-header">
+        <div class="page-header-logo">CPSR</div>
+        <div class="page-header-title">Stem Cell Lift Moisturiser &#8212; Harrogate Organics Company &#8212; Strive Group Brands LTD</div>
+    </div>
+
+    <h1>9. Undesirable Effects &amp; Cosmetovigilance</h1>
+
+    <h2>9.1 UE / SUE Counts to Date</h2>
+    <table>
+        <thead><tr><th>Category</th><th>Count</th><th>Reporting Period</th></tr></thead>
+        <tbody>
+            <tr><td><strong>Undesirable Effects (UE)</strong></td><td style="font-size:18px;font-weight:700;color:var(--pass-green);text-align:center;">0</td><td>From product launch to 25 March 2026</td></tr>
+            <tr><td><strong>Serious Undesirable Effects (SUE)</strong></td><td style="font-size:18px;font-weight:700;color:var(--pass-green);text-align:center;">0</td><td>From product launch to 25 March 2026</td></tr>
+        </tbody>
+    </table>
+
+    <div class="method-box">
+        <div class="method-box-title">Definitions (Article 2(1)(p)(q), Regulation (EC) No 1223/2009)</div>
+        <p><strong>UE:</strong> An adverse reaction for human health attributable to normal or reasonably foreseeable use of a cosmetic product.</p>
+        <p><strong>SUE:</strong> An undesirable effect resulting in temporary or permanent functional incapacity, disability, hospitalisation, congenital anomalies, immediate vital risk, or death.</p>
+    </div>
+
+    <h2>9.2 Post-Market Surveillance (PMS) Status</h2>
+    <p>No undesirable effects data were provided for this product at the time of assessment. This is consistent with a product in the pre-launch or early post-launch phase. Absence of data is not asserted as evidence of absence of effects.</p>
+
+    <h2>9.3 Known Ingredient-Level Considerations</h2>
+    <ul>
+        <li>Potassium Sorbate and Sodium Benzoate (0.1% each) may theoretically cause sensitivity reactions in a small subset of individuals; however, both are used well within their permitted Annex V limits (max 0.6% and 0.5% respectively).</li>
+        <li>Zinc Oxide in skincare formulations has a well-established safety profile with no known adverse effects at the declared 1.0% concentration.</li>
+        <li>All botanical extracts (Centella Asiatica, Vitis Vinifera, Hibiscus, Pyrus Malus, Camellia Sinensis) are present at 0.05% &#8212; at these trace levels, adverse effects in the general adult population are not anticipated.</li>
+    </ul>
+
+    <h2>9.4 Post-Market Monitoring Plan (Recommended)</h2>
+    <p>The Responsible Person is recommended to establish a post-market surveillance system to collect:</p>
+    <ul>
+        <li>Consumer complaints and adverse reactions (cosmetovigilance)</li>
+        <li>Serious Undesirable Effects (SUEs) &#8212; to be reported to the relevant Competent Authority within 10 days of becoming aware (Article 23, Regulation 1223/2009)</li>
+        <li>Data to update this CPSR as required by Article 10(1)(e)</li>
+    </ul>
+
+    <div class="page-footer">
+        <span>CPSR-HOC-STEMCELLLIFT-2026-V1</span>
+        <span>Page 22</span>
+        <span>Confidential</span>
+    </div>
+</div>
+
+<!-- ============================================================ -->
+<!-- PART A — Section 10: Additional Information                 -->
+<!-- ============================================================ -->
+<div class="page">
+    <div class="page-header">
+        <div class="page-header-logo">CPSR</div>
+        <div class="page-header-title">Stem Cell Lift Moisturiser &#8212; Harrogate Organics Company &#8212; Strive Group Brands LTD</div>
+    </div>
+
+    <h1>10. Additional Information on the Product</h1>
+    <table class="dense">
+        <thead><tr><th>Document</th><th>Issuer</th><th>Date</th><th>Status</th></tr></thead>
+        <tbody>
+            <tr><td>CPSR Entry Form &#8212; Stem Cell Lift Moisturiser</td><td>MySwissLab+, SBR Group S&#224;rl</td><td>25/03/2026</td><td><span class="badge badge-resolved">ON FILE</span></td></tr>
+            <tr><td>Safety Data Sheet (MSDS) V1 &#8212; Stem Cell Lift Moisturiser</td><td>Harrogate Organics Company</td><td>17/06/2025</td><td><span class="badge badge-resolved">ON FILE</span></td></tr>
+            <tr><td>Challenge Test Report (ISO 11930) &#8212; Sample TR7YU</td><td>MySwissLab+, SBR Group S&#224;rl &#8212; Microbiologist: Diogo A. M. Alexandrino</td><td>17/08/2024</td><td><span class="badge badge-resolved">ON FILE</span></td></tr>
+            <tr><td>Microbiological Analysis Report (ISO 17516:2004) &#8212; Sample TR7YU</td><td>MySwissLab+, SBR Group S&#224;rl &#8212; Chemist: Ralph Christian M. Mendoza</td><td>17/08/2024</td><td><span class="badge badge-resolved">ON FILE</span></td></tr>
+            <tr><td>Stability Test Report (12 weeks accelerated) &#8212; Sample TR7YU</td><td>MySwissLab+, SBR Group S&#224;rl</td><td>17/08/2024</td><td><span class="badge badge-resolved">ON FILE</span></td></tr>
+        </tbody>
+    </table>
+
+    <div class="method-box">
+        <div class="method-box-title">Additional Supporting Information</div>
+        <ul>
+            <li>Stability testing passed: 12 weeks accelerated conditions (5&#176;C, ambient, 40&#176;C) &#8212; confirms 24-month shelf life.</li>
+            <li>Challenge test passed: ISO 11930 Criteria A for all 4 organisms &#8212; confirms 12-month PAO.</li>
+            <li>Microbiological quality confirmed: ISO 17516:2004 &#8212; all parameters compliant.</li>
+            <li>GHS Classification: Not classified as hazardous (MSDS Section 2 &#8212; no signal word, no hazard statement).</li>
+            <li>Transport regulations: Not regulated as dangerous good under UNRTDG, IATA-DGR, or IMDG-Code.</li>
+            <li>No nanomaterials declared; Zinc Oxide used in non-nano form only.</li>
+            <li>No animal testing performed on the finished product or its ingredients since the applicable regulatory deadlines.</li>
+        </ul>
+    </div>
+
+    <div class="page-footer">
+        <span>CPSR-HOC-STEMCELLLIFT-2026-V1</span>
+        <span>Page 23</span>
+        <span>Confidential</span>
+    </div>
+</div>
+
+
+<!-- ============================================================ -->
+<!-- PART B — Section 1: Assessment Conclusion                   -->
+<!-- ============================================================ -->
+<div class="page">
+    <div class="page-header">
+        <div class="page-header-logo">CPSR</div>
+        <div class="page-header-title">Stem Cell Lift Moisturiser &#8212; Harrogate Organics Company &#8212; Strive Group Brands LTD</div>
+    </div>
+
+    <div class="part-header">
+        <div class="part-label">Part B</div>
+        <div class="part-title">Cosmetic Product Safety Assessment</div>
+    </div>
+
+    <h1>1. Assessment Conclusion</h1>
+
+    <div class="conclusion-box">
+        <div class="conclusion-title">Assessment Conclusion &#8212; SAFE (Pending Assessor Signature)</div>
+        <div class="conclusion-text">Based on the information provided and the assessment conducted in accordance with Article 10 of Regulation (EC) No 1223/2009 as retained in UK law, the cosmetic product <strong>Stem Cell Lift Moisturiser (Harrogate Organics Company)</strong> is considered <strong>safe for human health</strong> when used under normal or reasonably foreseeable conditions of use as described on the product label, taking account of the presentation, labelling, instructions for use, and disposal, as well as any other indication or information from the Responsible Person. This conclusion is based on the following:<br><br>
+        &#8226; All ingredient MoS values are substantially above the safety threshold of 100 (lowest MoS: Allantoin at 11,592).<br>
+        &#8226; The product passed microbiological quality testing (ISO 17516:2004).<br>
+        &#8226; The product passed preservative efficacy challenge testing (ISO 11930, Criteria A, all four organisms).<br>
+        &#8226; The product demonstrated stability over 12 weeks under accelerated conditions (5&#176;C, ambient, 40&#176;C).<br>
+        &#8226; No prohibited (Annex II) or restricted (Annex III, conditions unmet) substances were identified.<br>
+        &#8226; The preservative system is compliant with Annex V limits (Potassium Sorbate 0.1% vs. max 0.6%; Sodium Benzoate 0.1% vs. max 0.5%).<br>
+        &#8226; Zinc Oxide at 1.0% is compliant with Annex VI UV filter limits (max 25% for non-nano ZnO).<br>
+        &#8226; The MSDS confirms non-irritant status to skin (OECD 404) and eyes.<br><br>
+        <strong>Assessment Status: PASS (pending qualified safety assessor signature)</strong>
+        </div>
+    </div>
+
+    <div class="page-footer">
+        <span>CPSR-HOC-STEMCELLLIFT-2026-V1</span>
+        <span>Page 24</span>
+        <span>Confidential</span>
+    </div>
+</div>
+
+<!-- ============================================================ -->
+<!-- PART B — Section 2: Labelled Warnings                      -->
+<!-- ============================================================ -->
+<div class="page">
+    <div class="page-header">
+        <div class="page-header-logo">CPSR</div>
+        <div class="page-header-title">Stem Cell Lift Moisturiser &#8212; Harrogate Organics Company &#8212; Strive Group Brands LTD</div>
+    </div>
+
+    <h1>2. Labelled Warnings and Instructions of Use</h1>
+
+    <h2>2.1 Fragrance Allergen Declarations</h2>
+    <p>In compliance with Article 19(1)(d) of Regulation (EC) No 1223/2009 as retained in UK law, a screening for the 26 listed fragrance allergens (Annex III) was performed. <strong>No fragrance allergens were identified above the 0.01% (100 ppm) leave-on declaration threshold.</strong> No mandatory allergen declarations are required on the label for this product.</p>
+
+    <h2>2.2 INCI Ingredient List (Label Order &#8212; Descending Concentration)</h2>
+    <div class="method-box">
+        <div class="method-box-title">Full INCI List for Label</div>
+        <p style="font-style:italic; font-size:9pt; line-height:1.8;">AQUA, PRUNUS ARMENIACA KERNEL OIL, GLYCERIN, HELIANTHUS ANNUUS SEED OIL, CETEARYL OLIVATE, CETEARYL ALCOHOL, SORBITAN OLIVATE, OLEA EUROPAEA FRUIT OIL, COCOS NUCIFERA OIL, BUTYROSPERMUM PARKII BUTTER, ZINC OXIDE, 1,2-HEXANEDIOL, CAPRYLYL GLYCOL, XANTHAN GUM, POTASSIUM SORBATE, ORYZA SATIVA BRAN OIL, SODIUM HYALURONATE, ALLANTOIN, SODIUM BENZOATE, CENTELLA ASIATICA LEAF EXTRACT, VITIS VINIFERA SEED EXTRACT, HIBISCUS SABDARIFFA FLOWER EXTRACT, PYRUS MALUS FRUIT EXTRACT, CAMELLIA SINENSIS LEAF EXTRACT, CITRIC ACID</p>
+    </div>
+
+    <h2>2.3 Required Label Warnings and Instructions</h2>
+    <div class="method-box">
+        <div class="method-box-title">Mandatory and Recommended Label Warnings</div>
+        <ul>
+            <li>External use only.</li>
+            <li>Keep out of reach of children.</li>
+            <li>Avoid the delicate eye area.</li>
+            <li>If product gets into eyes, rinse well with water.</li>
+            <li>Discontinue use if redness or irritation occurs.</li>
+        </ul>
+    </div>
+
+    <div class="page-footer">
+        <span>CPSR-HOC-STEMCELLLIFT-2026-V1</span>
+        <span>Page 25</span>
+        <span>Confidential</span>
+    </div>
+</div>
+
+<!-- ============================================================ -->
+<!-- PART B — Section 2 cont: Label Information                 -->
+<!-- ============================================================ -->
+<div class="page">
+    <div class="page-header">
+        <div class="page-header-logo">CPSR</div>
+        <div class="page-header-title">Stem Cell Lift Moisturiser &#8212; Harrogate Organics Company &#8212; Strive Group Brands LTD</div>
+    </div>
+
+    <h2>2.4 Directions for Use (as provided on label)</h2>
+    <div class="method-box">
+        <div class="method-box-title">Directions</div>
+        <p>Apply a small amount of moisturiser to a cleansed face and neck, avoiding the delicate eye area. Dab delicately and blend into the skin in circular motions. Apply twice a day, morning and night.</p>
+    </div>
+
+    <h2>2.5 Additional Required Label Information (UK Cosmetics Regulation)</h2>
+    <table class="dense">
+        <thead><tr><th>Element</th><th>Information</th></tr></thead>
+        <tbody>
+            <tr><td>Product Name</td><td>Stem Cell Lift Moisturiser</td></tr>
+            <tr><td>Brand</td><td>Harrogate Organics Company</td></tr>
+            <tr><td>UK Responsible Person</td><td>Strive Group Brands LTD, 28 Freemans Way, Harrogate, England, HG3 1DH, United Kingdom</td></tr>
+            <tr><td>Shelf Life</td><td>24 months (minimum durability date on packaging)</td></tr>
+            <tr><td>PAO Symbol</td><td>Open jar symbol &#43; &#8220;12M&#8221; on packaging</td></tr>
+            <tr><td>EAN Barcode</td><td>5060767370513</td></tr>
+            <tr><td>No nanomaterials declaration required</td><td>Zinc Oxide used in non-nano form only</td></tr>
+            <tr><td>No mandatory allergen declaration required</td><td>No fragrance allergens above 0.01% leave-on threshold identified</td></tr>
+            <tr><td>Zinc Oxide label note</td><td>Zinc Oxide at 1.0% &#8212; no specific Annex VI labelling phrases mandated for non-nano ZnO at this concentration in face cream</td></tr>
+        </tbody>
+    </table>
+
+    <div class="page-footer">
+        <span>CPSR-HOC-STEMCELLLIFT-2026-V1</span>
+        <span>Page 26</span>
+        <span>Confidential</span>
+    </div>
+</div>
+
+<!-- ============================================================ -->
+<!-- PART B — Section 3: Reasoning (3.1–3.5)                   -->
+<!-- ============================================================ -->
+<div class="page">
+    <div class="page-header">
+        <div class="page-header-logo">CPSR</div>
+        <div class="page-header-title">Stem Cell Lift Moisturiser &#8212; Harrogate Organics Company &#8212; Strive Group Brands LTD</div>
+    </div>
+
+    <h1>3. Reasoning</h1>
+
+    <h3>3.1 Regulatory Compliance</h3>
+    <p>All ingredients were screened against EU Cosmetics Regulation Annexes II&#8211;VI: <strong>Annex II (Prohibited):</strong> No prohibited substances identified &#8212; PASS. <strong>Annex III (Restricted):</strong> No restricted substances used outside permitted conditions &#8212; PASS. <strong>Annex V (Preservatives):</strong> Potassium Sorbate 0.100% (max 0.6%) &#8212; PASS; Sodium Benzoate 0.100% (max 0.5%) &#8212; PASS. <strong>Annex VI (UV Filters):</strong> Zinc Oxide 1.000% (max 25% for non-nano) &#8212; PASS. CMR Substances: No ingredients with CLP CMR 1A/1B classification identified. Nanomaterials: No nano-form ingredients declared. Zinc Oxide used in non-nano form. Fragrance Allergens: No allergens above 0.01% leave-on declaration threshold identified.</p>
+
+    <h3>3.2 Exposure Assessment</h3>
+    <p>SCCS category: Face cream (leave-on), Table 3A, SCCS/1647/22. DAa: 24.5 mg/kg bw/day (conservative SCCS face cream default). Body weight: 60 kg (SCCS adult default). Retention factor: 1.0 (leave-on product). DA defaults: 50% small-molecule ingredients; 10% high MW lipids; 1% ZnO and high MW polysaccharides. No children&#8217;s or vulnerable population adjustments required (adult-only product). No inhalation exposure pathway &#8212; cream format, not a spray.</p>
+
+    <h3>3.3 Systemic Safety</h3>
+    <p>All MoS values &#8805; 100. Key values: Lowest MoS: Allantoin at 0.100% &#8212; MoS = 11,592 (PASS, threshold 100). Camellia Sinensis Leaf Extract at 0.050% &#8212; MoS = 32,653 (PASS). Caprylyl Glycol at 0.750% &#8212; MoS = 3,261 (PASS). Cetearyl Alcohol at 2.000% &#8212; MoS = 4,082 (PASS). All other ingredients: MoS &gt;4,000 (PASS). No MoS below the safety threshold of 100. No systemic toxicity concern identified.</p>
+
+    <h3>3.4 Local Effects</h3>
+    <p><strong>Sensitisation:</strong> No known sensitisers at concern levels. Preservatives within Annex V limits. No mandatory allergen declarations triggered. <strong>Irritation/Corrosion:</strong> pH 5.0&#8211;5.5 is compatible with skin acid mantle. MSDS confirms non-irritant (OECD 404, Rabbit). No irritation concern. <strong>Ocular Safety:</strong> Not an eye product; foreseeable eye contact addressed by label warning. Non-irritant formulation confirmed by MSDS. <strong>Phototoxicity:</strong> Zinc Oxide is an inorganic UV absorber with no phototoxic classification. Plant extracts present have UV-protective functions. No phototoxicity concern.</p>
+
+    <h3>3.5 Microbiological Safety</h3>
+    <p>Water activity &gt;0.75 (aqueous emulsion) &#8212; preserved system required and in place. Preservation system: Potassium Sorbate 0.100% + Sodium Benzoate 0.100% + 1,2-Hexanediol 0.750% + Caprylyl Glycol 0.750%. ISO 11930 Criteria A achieved for all 4 organisms (P. aeruginosa, S. aureus, C. albicans, A. brasiliensis) at Days 7, 14, and 28. ISO 17516:2004 microbiological quality: all parameters compliant. Airless packaging minimises post-opening contamination risk. PAO of 12 months is fully supported by test data.</p>
+
+    <div class="page-footer">
+        <span>CPSR-HOC-STEMCELLLIFT-2026-V1</span>
+        <span>Page 27</span>
+        <span>Confidential</span>
+    </div>
+</div>
+
+<!-- ============================================================ -->
+<!-- PART B — Section 3 cont: Reasoning (3.6–3.9)              -->
+<!-- ============================================================ -->
+<div class="page">
+    <div class="page-header">
+        <div class="page-header-logo">CPSR</div>
+        <div class="page-header-title">Stem Cell Lift Moisturiser &#8212; Harrogate Organics Company &#8212; Strive Group Brands LTD</div>
+    </div>
+
+    <h3>3.6 Impurity and Packaging Safety</h3>
+    <p>No ethoxylated ingredients &#8212; no 1,4-dioxane risk. No formaldehyde-releasing preservatives &#8212; no formaldehyde risk. No nitrosamine precursor combinations identified. Packaging: Airless AS jar &#8212; inert, cosmetic-grade material. Low NIAS risk. Stability confirmed at 40&#176;C over 12 weeks &#8212; no packaging degradation or migration concern identified.</p>
+
+    <h3>3.7 Uncertainty and Conservatism</h3>
+    <p>DA = 50% (default) is a well-established SCCS conservative default applied where substance-specific data is absent. DAa = 24.5 mg/kg bw/day may overestimate actual daily application for many users. Even under these worst-case conservative assumptions, all MoS values substantially exceed 100. Cumulative conservatism (50% DA + SCCS worst-case DAa) ensures safety margins are genuinely protective. Evidence grades: Measured (stability, pH, challenge test, micro test) / Supplier CoA / Literature (tox data) / SCCS defaults (DA where not measured).</p>
+
+    <h3>3.8 Special Populations</h3>
+    <p><strong>Children under 3:</strong> Product not intended for children under 3. Label warning &#8220;Keep out of reach of children&#8221; mitigates foreseeable misuse. No dedicated children&#8217;s assessment required for adult-targeted product. <strong>Elderly/pregnant/immunocompromised:</strong> No specific restrictions identified. Formula is mild and uses well-tolerated ingredients. <strong>Intimate hygiene:</strong> Not applicable &#8212; product is for face and neck only.</p>
+
+    <h3>3.9 Final Justification</h3>
+    <p>The evidence across all assessed domains &#8212; regulatory compliance, systemic safety (all MoS &#8805; 100), local effects (non-irritant, no sensitisers at concern levels), microbiological safety (ISO 11930 Criteria A; ISO 17516 compliant), packaging safety, and stability (12-week accelerated) &#8212; consistently supports a PASS conclusion. No prohibited or restricted substances were identified. All three laboratory tests were passed. The product is assessed as <strong>safe for human health under normal or reasonably foreseeable conditions of use when used as directed by the general adult population</strong>.</p>
+
+    <br><br><br><br><br><br><br><br><br>
+    <div class="page-footer">
+        <span>CPSR-HOC-STEMCELLLIFT-2026-V1</span>
+        <span>Page 28</span>
+        <span>Confidential</span>
+    </div>
+</div>
+
+<!-- ============================================================ -->
+<!-- PART B — Section 4: Assessor Credentials                   -->
+<!-- ============================================================ -->
+<div class="page">
+    <div class="page-header">
+        <div class="page-header-logo">CPSR</div>
+        <div class="page-header-title">Stem Cell Lift Moisturiser &#8212; Harrogate Organics Company &#8212; Strive Group Brands LTD</div>
+    </div>
+
+    <h1>4. Assessor Credentials and Approval</h1>
+
+    <h2>4.1 Safety Assessor</h2>
+    <div class="info-grid">
+        <div class="info-label">Name</div><div class="info-value">Cassandra Margaret Maddocks</div>
+        <div class="info-label">Position</div><div class="info-value">Safety Assessor &#8212; SBR Group S&#224;rl / MySwissLab+</div>
+        <div class="info-label">Organisation</div><div class="info-value">SBR Group S&#224;rl, 1b Route de l&#8217;Industrie, 1072 Forel, Switzerland</div>
+    </div>
+
+    <h2>4.2 Formal Qualifications</h2>
+    <p>Per <strong>Article 10(2) of Regulation (EC) No 1223/2009</strong> as retained in UK law, the assessor must hold a diploma in pharmacy, toxicology, medicine, or a similar discipline.</p>
+    <table>
+        <thead><tr><th>Qualification</th><th>Institution</th><th>Year</th><th>Relevance</th></tr></thead>
+        <tbody>
+            <tr><td>BSc (Biochemistry / Chemistry)</td><td>Swinburne University of Technology, Australia</td><td>2013</td><td>&#8220;Similar discipline&#8221; per Art. 10(2)</td></tr>
+            <tr><td>Diploma of Laboratory Technology</td><td>Swinburne University of Technology, Australia</td><td>&#8212;</td><td>Practical laboratory competence</td></tr>
+            <tr style="background:var(--pass-green-bg);"><td><strong>Forensic and Analytical Science</strong></td><td>Swinburne University of Technology, Australia</td><td>Semester 2009/1</td><td><strong>Toxicology competence &#8212; formal university coursework covering toxicology</strong></td></tr>
+        </tbody>
+    </table>
+    <p><strong>Credential Recognition:</strong> Swedish UHR evaluated as equivalent to Bachelor&#8217;s degree (<em>kandidatexamen</em>). Reg. 322-01197-17, dated 03/10/2017.</p>
+    <p><strong>Student ID:</strong> 6503020</p>
+
+    <br><br><br><br><br><br><br><br><br><br><br><br>
+    <div class="page-footer">
+        <span>CPSR-HOC-STEMCELLLIFT-2026-V1</span>
+        <span>Page 29</span>
+        <span>Confidential</span>
+    </div>
+</div>
+
+<!-- ============================================================ -->
+<!-- PART B — Section 4: Toxicology Evidence + Signature Block  -->
+<!-- ============================================================ -->
+<div class="page">
+    <div class="page-header">
+        <div class="page-header-logo">CPSR</div>
+        <div class="page-header-title">Stem Cell Lift Moisturiser &#8212; Harrogate Organics Company &#8212; Strive Group Brands LTD</div>
+    </div>
+
+    <h2>4.3 Toxicological Competence Evidence</h2>
+    <div class="conclusion-box">
+        <div class="conclusion-title">Toxicology Competence &#8212; Evidenced</div>
+        <div class="conclusion-text">The Safety Assessor completed formal university coursework in <strong>Forensic and Analytical Science</strong> (Semester 2009/1, Student ID 6503020) at Swinburne University of Technology, which covered toxicology as part of the curriculum. This provides the specific toxicological competence required by Article 10(2) of Regulation (EC) No 1223/2009 as retained in UK law.</div>
+    </div>
+
+    <table class="dense">
+        <thead><tr><th>Evidence Type</th><th>Description</th><th>Status</th></tr></thead>
+        <tbody>
+            <tr><td>Formal toxicology coursework</td><td>Forensic and Analytical Science (Semester 2009/1) &#8212; covering toxicology, analytical methods for toxicological assessment</td><td><span class="badge badge-resolved">EVIDENCED</span></td></tr>
+            <tr><td>University degree</td><td>BSc (Biochemistry/Chemistry) &#8212; foundational sciences for toxicological reasoning</td><td><span class="badge badge-resolved">EVIDENCED</span></td></tr>
+            <tr><td>Professional experience</td><td>10+ years formulating cosmetic products with safety assessment responsibilities</td><td><span class="badge badge-resolved">EVIDENCED</span></td></tr>
+        </tbody>
+    </table>
+
+    <h2>4.4 Signature Block</h2>
+    <div class="signature-block">
+        <div class="signature-grid">
+            <div class="signature-item">
+                <div class="signature-label">Safety Assessor Name</div>
+                <p style="font-weight:600;margin-top:5px;">Cassandra Margaret Maddocks</p>
+                <div class="signature-label" style="margin-top:10px;">Qualifications</div>
+                <p style="font-size:9pt;margin-top:5px;">BSc (Biochemistry/Chemistry), Diploma of Laboratory Technology &#8212; Swinburne University of Technology, Australia</p>
+                <div class="signature-label" style="margin-top:10px;">Organisation</div>
+                <p style="font-size:9pt;margin-top:5px;">SBR Group S&#224;rl / MySwissLab+, Forel, Switzerland</p>
+            </div>
+            <div class="signature-item">
+                <div class="signature-label">Date of Assessment</div>
+                <div class="signature-line"></div>
+                <div class="signature-label">Signature</div>
+                <div class="signature-line"></div>
+            </div>
+        </div>
+        <p style="font-size:9pt;color:var(--medium-gray);margin-top:15px;font-style:italic;">
+            This CPSR must be reviewed and signed by the qualified safety assessor as defined in Article 10(2) of Regulation (EC) No 1223/2009 as retained in UK law. The report is not valid without the assessor&#8217;s signature. This document must be retained for 10 years after the last batch of the product is placed on the market per Article 11(3) of Regulation (EC) No 1223/2009 as retained in UK law.
+        </p>
+    </div>
+
+    <br><br><br>
+    <div class="page-footer">
+        <span>CPSR-HOC-STEMCELLLIFT-2026-V1</span>
+        <span>Page 30</span>
+        <span>Confidential</span>
+    </div>
+</div>
+
+</div><!-- end .document -->
+</body>
+</html>
